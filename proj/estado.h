@@ -1,9 +1,3 @@
-//
-// Created by pja on 27/02/2019.
-//
-
-
-
 #ifndef PROJ_ESTADO_H
 #define PROJ_ESTADO_H
 
@@ -29,6 +23,7 @@ typedef struct estado {
 
 
 void printa(ESTADO);
+ESTADO novo_jogo(ESTADO e, VALOR v);
 
 
 #endif //PROJ_ESTADO_H

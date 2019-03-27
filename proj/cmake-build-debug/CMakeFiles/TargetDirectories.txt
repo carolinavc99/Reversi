@@ -1,0 +1,3 @@
+/home/micooltb/Jogo_LI2/proj/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/micooltb/Jogo_LI2/proj/cmake-build-debug/CMakeFiles/Reversi.dir
+/home/micooltb/Jogo_LI2/proj/cmake-build-debug/CMakeFiles/edit_cache.dir
