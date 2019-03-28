@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/sf_LI2/Reversi-master/proj/comandos.c
+stdio.h
+-
+comandos.h
+/media/sf_LI2/Reversi-master/proj/comandos.h
+
+/media/sf_LI2/Reversi-master/proj/comandos.h
+
+/media/sf_LI2/Reversi-master/proj/estado.c
+stdio.h
+-
+estado.h
+/media/sf_LI2/Reversi-master/proj/estado.h
+
+/media/sf_LI2/Reversi-master/proj/estado.h
+
+/media/sf_LI2/Reversi-master/proj/main.c
+stdio.h
+-
+estado.h
+/media/sf_LI2/Reversi-master/proj/estado.h
+comandos.h
+/media/sf_LI2/Reversi-master/proj/comandos.h
+
