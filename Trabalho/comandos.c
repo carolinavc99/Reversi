@@ -10,13 +10,7 @@ int comandos(char c) {
         char a;
 
         case 'N':
-            printf("Atenção: Esta ação irá eliminar qualquer jogo guardado.\n"
-                   "Pretende continuar? [S/N]\n");
-            scanf("%c", &a);
-            if (!(a == 'S' || a == 's'))
-                break;
-            else
-                novoJogo(); // altera, dentro do ficheiro, o tabuleiro de jogo, com o jogador correto
+                novoJogo(); // dentro do ficheiro correto, altera o tabuleiro de jogo, com o jogador correto
             break;
 
         case 'L':
@@ -43,7 +37,7 @@ int comandos(char c) {
         default:
             printf("Comando inválido.");
             break;
-}
+    }
 
 }
 
@@ -54,6 +48,7 @@ int novoJogo() {
     scanf ("%c", &peca);
 
     while (!(peca == 'X' || peca == 'x' || peca == 'O' || peca == 'o')) {
+        getchar();
         printf("Jogador inválido. Por favor introduza 'X' ou 'O'\n");
         scanf("%c", &peca);
     }

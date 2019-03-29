@@ -18,7 +18,7 @@ int main() {
     //menu com printfs auxiliares ao lado em comentário
     printf("Opções:\n"
            "N - cria um novo jogo\n" // indique a peça que começa primeiro
-           "L - ler um jogo de ficheiro\n" // indicar o ficheiro, O QUE É QUE ISTO FAZ?
+           "L - ler um jogo de ficheiro\n" // indicar o ficheiro em que o jogo pretendido está guardado
            "E - guardar o jogo\n" // escrever num ficheiro o estado atual do jogo
            "J - jogar\n" // indique a linha e a coluna da posição, não esquecer que esta função é sensível à peça que deve ser jogada
            "S - opções de jogada\n" // imprime .
