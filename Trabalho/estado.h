@@ -20,7 +20,7 @@ typedef struct estado {
 
 
 void destado(ESTADO);
-void dmenu();
+char dmenu();
 
 
 #endif //PROJ_ESTADO_H

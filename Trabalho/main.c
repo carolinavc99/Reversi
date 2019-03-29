@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "estado.h"
 #include "comandos.h"
+#include <stdlib.h>
 
 int main() {
     ESTADO e = {0};
@@ -15,24 +16,25 @@ int main() {
 
     destado(e); // imprime o tabuleiro
 
-    //menu com printfs auxiliares ao lado em comentário
-    printf("Opções:\n"
-           "N - cria um novo jogo\n" // indique a peça que começa primeiro
-           "L - ler um jogo de ficheiro\n" // indicar o ficheiro em que o jogo pretendido está guardado
-           "E - guardar o jogo\n" // escrever num ficheiro o estado atual do jogo
-           "J - jogar\n" // indique a linha e a coluna da posição, não esquecer que esta função é sensível à peça que deve ser jogada
-           "S - opções de jogada\n" // imprime .
-           "H - sugestão de jogadda\n" // imprime ?
-           "U - desfazer a última jogada\n" // usar stacks para isto, tem de conseguir retornar até ao estado inicial do jogo
-           "A - jogar contra o computador (X joga primeiro)\n" // indique a peça e o nível de dificuldade
-           "Q - sair\n");
-
-    scanf("%c", &c);
+    c = dmenu(); // imprime o menu e devolve o input do utilizador
 
     // A 'comandos' não interpreta o 'Q', a 'main' é que sim.
     while (c != 'Q') {
         comandos(c);
     }
 
+
+    printf("Ação terminada.");
     return 0;
 }
+
+
+/*                           ##############   NOTAS   ##############
+ *
+ *  Neste trabalho precisamos que a 'main' seja capaz de criar novos ficheiros para cada jogo guardado.
+ *  Ou seja, de cada vez que a pessoa pede Novo Jogo o programa tem de ser capaz de criar um ficheiro
+ * novo, a partir do nome que o utilizador lhe der.
+ *  A função 'fopen' já abre ficheiros automaticamente, por isso temos de descobrir uma maneira de
+ * fornecer à 'fopen' o nome do ficheiro. (passando-lhe uma string com o nome que queremos dar ao jogo)
+ *
+ * */

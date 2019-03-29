@@ -6,8 +6,6 @@
 int comandos(char c) {
 
     switch (c) {
-        //variáveis de embuste
-        char a;
 
         case 'N':
                 novoJogo(); // dentro do ficheiro correto, altera o tabuleiro de jogo, com o jogador correto
