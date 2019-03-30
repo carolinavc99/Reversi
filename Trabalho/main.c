@@ -14,7 +14,8 @@ int main() {
     e.grelha[3][3] = VALOR_O;
     e.grelha[4][4] = VALOR_O;
 
-    destado(e); // imprime o tabuleiro
+    printf("\n  ### Reversi ###\n");
+    destado(e); // imprime o tabuleiro (com linhas e colunas numeradas)
 
     c = dmenu(); // imprime o menu e devolve o input do utilizador
 
@@ -23,18 +24,32 @@ int main() {
         comandos(c);
     }
 
-
-    printf("Ação terminada.");
     return 0;
 }
 
 
 /*                           ##############   NOTAS   ##############
  *
+ *  <<NOVO JOGO>>
  *  Neste trabalho precisamos que a 'main' seja capaz de criar novos ficheiros para cada jogo guardado.
- *  Ou seja, de cada vez que a pessoa pede Novo Jogo o programa tem de ser capaz de criar um ficheiro
+ *  Ou seja, de cada vez que a pessoa pede 'Novo Jogo' o programa tem de ser capaz de criar um ficheiro
  * novo, a partir do nome que o utilizador lhe der.
- *  A função 'fopen' já abre ficheiros automaticamente, por isso temos de descobrir uma maneira de
- * fornecer à 'fopen' o nome do ficheiro. (passando-lhe uma string com o nome que queremos dar ao jogo)
+ *  A função 'fopen' já abre ficheiros automaticamente, por isso passamos-lhe uma string com o nome que
+ *  queremos dar àquele jogo em particular.
  *
+ *  <<LER JOGO>>
+ *
+ *  <<GUARDAR>>
+ *
+ *  <<JOGAR>>
+ *
+ *  <<OPÇÕES DE JOGADA>>
+ *
+ *  <<SUGESTÕES DE JOGADA>>
+ *
+ *  <<DESFAZER>>
+ *
+ *  <<MODO AUTOMÁTICO>>
+ *
+ *  <<SAIR>>
  * */
