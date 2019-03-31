@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/micooltb/Jogo_LI2/proj/estado.h
+
+/home/micooltb/Jogo_LI2/proj/interpretador.c
+stdio.h
+-
+stdlib.h
+-
+ctype.h
+-
+interpretador.h
+/home/micooltb/Jogo_LI2/proj/interpretador.h
+estado.h
+/home/micooltb/Jogo_LI2/proj/estado.h
+
+/home/micooltb/Jogo_LI2/proj/interpretador.h
+estado.h
+/home/micooltb/Jogo_LI2/proj/estado.h
+

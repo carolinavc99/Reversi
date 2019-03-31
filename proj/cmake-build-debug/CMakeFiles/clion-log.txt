@@ -1,0 +1,4 @@
+/snap/clion/61/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/micooltb/Jogo_LI2/proj
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/micooltb/Jogo_LI2/proj/cmake-build-debug
