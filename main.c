@@ -1,6 +1,8 @@
 #include <stdio.h>
-#include "estado.h"
-#include "comandos.h"
+#include "estado.h"            /* contém a função que imprime o tabuleiro no estado atual
+                                  e a função que imprime o menu de comandos (que é estático) */
+#include "comandos.h"          // interpretador de comandos
+#include "alterarTabuleiro.h"  // lê e escreve no ficheiro de jogo indicado
 #include <stdlib.h>
 
 int main() {

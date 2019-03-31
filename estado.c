@@ -32,6 +32,7 @@ void destado(ESTADO e) {
     printf("\n");
 }
 
+// display do menu
 char dmenu() {   // os comentários ao lado são sobre o que é preciso fazer para cada função
     char c;
 
