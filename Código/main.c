@@ -21,9 +21,5 @@ int main() {
 
     menu(e);
 
-    printf("\n");
-    printa(e);
-    printf("\n");
-
     return 0;
 }

@@ -5,7 +5,7 @@
 
 #include "estado.h"
 
-ESTADO novoJogo (ESTADO e);
+ESTADO novoJogo (ESTADO e, VALOR peca);
 
 
 

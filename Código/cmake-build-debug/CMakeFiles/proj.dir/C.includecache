@@ -19,6 +19,8 @@ comandos.h
 /Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Código/comandos.h
 stdio.h
 -
+ctype.h
+-
 
 /Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Código/menu.h
 estado.h

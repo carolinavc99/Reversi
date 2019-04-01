@@ -1,37 +1,59 @@
 #include "menu.h"
 #include "comandos.h"
 #include <stdio.h>
+#include <ctype.h>
 
 ESTADO menu (ESTADO e) {
 
-    int opcao = 0;
+    char opcao = ' ';
+    char peca = ' ';
 
-    while (opcao != 9) {
+    while (toupper(opcao) != 'Q') {
 
-        printf("\n. . . . . . . . . . . . . . . . . . . . . . . . .\n. Selecione a opção:                            .\n.                                               .\n");
-        printf(". (1)Novo jogo                                  .\n");
-        printf(". (2)Continuar jogo                             .\n");
-        printf(". (3)Guardar jogo                               .\n");
-        printf(". (4)Jogar                                      .\n");
-        printf(". (5)Jogadas válidas                            .\n");
-        printf(". (6)Sugestão de jogada                         .\n");
-        printf(". (7)Desfazer última jogada                     .\n");
-        printf(". (8)Novo jogo contra o bot                     .\n");
-        printf(". (9)Sair                                       .\n. . . . . . . . . . . . . . . . . . . . . . . . .\n");
+        printf("\n. . . . . . . . . . . . . . . . . . . . . . . . .\n"
+               ". Selecione a opção:                            .\n"
+               ".                                               .\n"
+               ". (N) Novo jogo                                 .\n"
+               ". (L) Continuar jogo                            .\n"
+               ". (E) Guardar jogo                              .\n"
+               ". (J) Jogar                                     .\n"
+               ". (S) Jogadas válidas                           .\n"
+               ". (H) Sugestão de jogada                        .\n"
+               ". (U) Desfazer última jogada                    .\n"
+               ". (A) Novo jogo contra o bot                    .\n"
+               ". (Q) Sair                                      .\n"
+               ". . . . . . . . . . . . . . . . . . . . . . . . .\n");
 
-        scanf("%d", &opcao);
+        fscanf(stdin, "%c ", &opcao);
 
-        switch (opcao) {
+        switch (toupper(opcao)) {
 
-            case 1:
-                e = novoJogo(e);
+            case 'N':
+                fscanf(stdin, "%c", &peca);
+
+                switch (toupper(peca)) {
+
+                    case 'X':
+                        e = novoJogo(e,VALOR_X);
+                        break;
+
+                    case 'O':
+                        e = novoJogo(e,VALOR_O);
+                        break;
+
+                    default:
+                        printf("Peça inválida\n");
+                        break;
+
+                }
+
                 break;
 
-            case 2:
+            case 'L':
                 printa(e);
                 break;
 
-            case 9:
+            case 'Q':
                 printf("\nSaiu do jogo.\n");
                 break;
 
@@ -47,3 +69,8 @@ ESTADO menu (ESTADO e) {
     return e;
 
 }
+
+
+
+
+//fscanf(stdin, "%c ", inst)
