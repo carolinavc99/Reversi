@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/media/sf_LI2/Código/cmake-build-debug"/>
+				<Option working_dir="/media/sf_LI2/Código_working/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/media/sf_LI2/Código/cmake-build-debug"/>
+				<Option working_dir="/media/sf_LI2/Código_working/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="proj">
-				<Option output="/media/sf_LI2/Código/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/sf_LI2/Código/cmake-build-debug"/>
+				<Option output="/media/sf_LI2/Código_working/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/sf_LI2/Código_working/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -41,15 +41,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="proj/fast">
-				<Option output="/media/sf_LI2/Código/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/sf_LI2/Código/cmake-build-debug"/>
+				<Option output="/media/sf_LI2/Código_working/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/sf_LI2/Código_working/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -61,45 +61,45 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/media/sf_LI2/Código/cmake-build-debug"/>
+				<Option working_dir="/media/sf_LI2/Código_working/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/media/sf_LI2/Código/comandos.c">
+		<Unit filename="/media/sf_LI2/Código_working/comandos.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Código/comandos.h">
+		<Unit filename="/media/sf_LI2/Código_working/comandos.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Código/estado.c">
+		<Unit filename="/media/sf_LI2/Código_working/estado.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Código/estado.h">
+		<Unit filename="/media/sf_LI2/Código_working/estado.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Código/main.c">
+		<Unit filename="/media/sf_LI2/Código_working/main.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Código/menu.c">
+		<Unit filename="/media/sf_LI2/Código_working/menu.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Código/menu.h">
+		<Unit filename="/media/sf_LI2/Código_working/menu.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Código/CMakeLists.txt">
+		<Unit filename="/media/sf_LI2/Código_working/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

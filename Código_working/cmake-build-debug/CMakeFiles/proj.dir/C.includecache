@@ -6,23 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/media/sf_LI2/Código/comandos.h
-estado.h
-/media/sf_LI2/Código/estado.h
-
-/media/sf_LI2/Código/estado.h
-
-/media/sf_LI2/Código/menu.c
-menu.h
-/media/sf_LI2/Código/menu.h
+/media/sf_LI2/Código_working/comandos.c
 comandos.h
-/media/sf_LI2/Código/comandos.h
+/media/sf_LI2/Código_working/comandos.h
+string.h
+-
 stdio.h
 -
-ctype.h
--
 
-/media/sf_LI2/Código/menu.h
+/media/sf_LI2/Código_working/comandos.h
 estado.h
-/media/sf_LI2/Código/estado.h
+/media/sf_LI2/Código_working/estado.h
+
+/media/sf_LI2/Código_working/estado.h
 

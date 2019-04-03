@@ -9,7 +9,7 @@ ESTADO novoJogo (ESTADO e, VALOR peca);
 
 ESTADO jogar (ESTADO e, int linha, int coluna);
 
-
+ESTADO calcJogadasValidas (ESTADO e);
 
 
 

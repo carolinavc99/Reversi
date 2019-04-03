@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/media/sf_LI2/Código/comandos.c" "/media/sf_LI2/Código/cmake-build-debug/CMakeFiles/proj.dir/comandos.c.o"
-  "/media/sf_LI2/Código/estado.c" "/media/sf_LI2/Código/cmake-build-debug/CMakeFiles/proj.dir/estado.c.o"
-  "/media/sf_LI2/Código/main.c" "/media/sf_LI2/Código/cmake-build-debug/CMakeFiles/proj.dir/main.c.o"
-  "/media/sf_LI2/Código/menu.c" "/media/sf_LI2/Código/cmake-build-debug/CMakeFiles/proj.dir/menu.c.o"
+  "/media/sf_LI2/Código_working/comandos.c" "/media/sf_LI2/Código_working/cmake-build-debug/CMakeFiles/proj.dir/comandos.c.o"
+  "/media/sf_LI2/Código_working/estado.c" "/media/sf_LI2/Código_working/cmake-build-debug/CMakeFiles/proj.dir/estado.c.o"
+  "/media/sf_LI2/Código_working/main.c" "/media/sf_LI2/Código_working/cmake-build-debug/CMakeFiles/proj.dir/main.c.o"
+  "/media/sf_LI2/Código_working/menu.c" "/media/sf_LI2/Código_working/cmake-build-debug/CMakeFiles/proj.dir/menu.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
