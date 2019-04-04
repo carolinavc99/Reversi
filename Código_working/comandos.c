@@ -13,7 +13,9 @@ ESTADO novoJogo (ESTADO e, VALOR peca) {
     getchar(); // retira o enter final que estava a dar problemas
 
     strcat(nome, ".txt");
-    printf("%s", nome); // teste -- eliminar
+    printf("\nEstá agora a jogar em: %s\n", nome);
+
+    strcpy(e.nome, nome); // coloca no estado o nome do ficheiro
 
     e.modo = '0';
     e.peca = peca;
@@ -127,7 +129,7 @@ int jogadaValida (ESTADO e, int dl, int dc, int linha, int coluna) {
 ESTADO calcJogadasValidas (ESTADO e) {
 
     ESTADO v = {0};
-    int nw, nn, ne, ww, ee, sw, ss, se;
+    int no, nn, ne, oo, ee, so, ss, se; // coordenadas
 
     for(int linha = 0; linha < 8; linha++) {
 
@@ -135,18 +137,18 @@ ESTADO calcJogadasValidas (ESTADO e) {
 
             if(e.grelha[linha][coluna] == VAZIA) {
 
-                nw = jogadaValida(e, -1, -1, linha, coluna);
+                no = jogadaValida(e, -1, -1, linha, coluna);
                 nn = jogadaValida(e, -1,  0, linha, coluna);
                 ne = jogadaValida(e, -1,  1, linha, coluna);
 
-                ww = jogadaValida(e,  0, -1, linha, coluna);
+                oo = jogadaValida(e,  0, -1, linha, coluna);
                 ee = jogadaValida(e,  0,  1, linha, coluna);
 
-                sw = jogadaValida(e,  1, -1, linha, coluna);
+                so = jogadaValida(e,  1, -1, linha, coluna);
                 ss = jogadaValida(e,  1,  0, linha, coluna);
                 se = jogadaValida(e,  1,  1, linha, coluna);
 
-                if(nw == 0 || nn == 0 || ne == 0 || ww == 0|| ee == 0|| sw == 0|| ss == 0 || se == 0) {
+                if(no == 0 || nn == 0 || ne == 0 || oo == 0|| ee == 0|| so == 0|| ss == 0 || se == 0) {
                     v.grelha [linha][coluna] = e.peca;
                 }
             }
