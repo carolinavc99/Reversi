@@ -19,14 +19,16 @@ void guardar (ESTADO e, char input[]);
 
 ESTADO undo (ESTADO e);
 
-////////////////////////////////////////////////////////
+/*////////////////////////////////////////////////////////*/
+
 typedef struct celula {
     int numero;             // 1ª,2ª,3ª,etc jogada
-    struct celula *prox;    // próxima jogada qe foi executada
+    struct celula *prox;    // próxima jogada que foi executada
 } *JOGADA;
 
 JOGADA novaJogada (); // função que incrementa a lista de jogadas já feitas
-////////////////////////////////////////////////////////
+
+/*////////////////////////////////////////////////////////*/
 
 
 

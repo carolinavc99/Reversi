@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 ESTADO novoJogo (VALOR peca) {
+
     ESTADO e = {0};
 
     e.modo = '0';
@@ -11,13 +12,13 @@ ESTADO novoJogo (VALOR peca) {
     strcpy(e.nome, ".");
     printf("nome: %s",e.nome); // teste
 
-    // Inicio do jogo
+    // estado inicial do tabuleiro
     e.grelha[3][4] = VALOR_X;
     e.grelha[4][3] = VALOR_X;
     e.grelha[3][3] = VALOR_O;
     e.grelha[4][4] = VALOR_O;
 
-    printf("#### Novo Jogo ####\n");
+    printf("\n\n#### Novo Jogo ####\n");
     printa(e);
     return e;
 }
@@ -214,21 +215,68 @@ int validarJogada (ESTADO e, int linha, int coluna) {
 }
 
 /*
-int verifica (ESTADO e, int linha, int coluna, int dl, int dc) {
+ * Verifica se existe uma peça do jogador que está a jogar numa dada direção.
+ * Caso exista, devolve o número de peças do adversário encurraladas nessa direção.
+ * Caso contrário, retorna o valor 0.
+ */
+int verificaPeca (ESTADO e, int linha, int coluna, int dl, int dc, VALOR outro, int i) {
+
+    if (linha < 8 && coluna < 8 && coluna >= 0 && linha >= 0) {
+
+        if (e.grelha[linha][coluna] == outro) {
+
+            i++;
+            i = verificaPeca(e, linha + dl, coluna + dc, dl, dc, outro, i);
+
+        }
+
+        else {
+
+            if (e.grelha[linha][coluna] == VAZIA) i = 0;
+
+
+        }
+
+    }
+
+    else i = 0;
+
+    return i;
+
+}
+
+
+/*
+ * Transforma as peças do adversário encurraladas em peças do jogador que está a jogar.
+ */
+ESTADO transformaPecas (ESTADO e, int linha, int coluna, int dl, int dc) {
 
     VALOR outro;
-    int r = 0;
+    int j,k;
 
     if (e.peca == VALOR_X) outro = VALOR_O;
     else outro = VALOR_X;
 
-    if (e.grelha[linha + dl][coluna + dc] == outro) r = 1 + verifica(e, linha, coluna, dl + dl, dc + dc);
-    else { if (e.grelha[linha + dl][coluna + dc] == VAZIA) r = 0; }
+    linha = linha + dl;
+    coluna = coluna + dc;
 
-    return r;
+    k = verificaPeca(e,linha,coluna,dl,dc,outro,0);
+
+    if (k!=0) {
+
+        for (j = 0; j < k; j++) {
+
+            e.grelha[linha][coluna] = e.peca;
+            linha = linha + dl;
+            coluna = coluna + dc;
+
+        }
+    }
+
+    return e;
 
 }
-*/
+
 
 /*
  * Coloca uma peça no tabuleiro na posição (linha,coluna) se a jogada for válida.
@@ -245,7 +293,16 @@ ESTADO jogar (ESTADO e, int linha, int coluna) {
     else {e.grelha[linha-1][coluna-1] = VALOR_X;}
 
     //Transforma as peças encurraladas.
-    //transformaEstado (e, linha, coluna);
+    e = transformaPecas (e, linha-1, coluna-1, -1, -1);
+    e = transformaPecas (e, linha-1, coluna-1, -1,  0);
+    e = transformaPecas (e, linha-1, coluna-1, -1,  1);
+
+    e = transformaPecas (e, linha-1, coluna-1,  0, -1);
+    e = transformaPecas (e, linha-1, coluna-1,  0,  1);
+
+    e = transformaPecas (e, linha-1, coluna-1,  1, -1);
+    e = transformaPecas (e, linha-1, coluna-1,  1,  0);
+    e = transformaPecas (e, linha-1, coluna-1,  1,  1);
 
     //Altera o jogador no Estado.
     if(e.peca == VALOR_O) e.peca = VALOR_X;

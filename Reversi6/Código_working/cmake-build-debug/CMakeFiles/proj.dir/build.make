@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/carolinavc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/carolinavc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/sf_LI2/Reversi-master4/Código_working
+CMAKE_SOURCE_DIR = "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/proj.dir/depend.make
@@ -59,55 +59,55 @@ include CMakeFiles/proj.dir/flags.make
 
 CMakeFiles/proj.dir/main.c.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/proj.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/proj.dir/main.c.o   -c /media/sf_LI2/Reversi-master4/Código_working/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/proj.dir/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/proj.dir/main.c.o   -c "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/main.c"
 
 CMakeFiles/proj.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/proj.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/sf_LI2/Reversi-master4/Código_working/main.c > CMakeFiles/proj.dir/main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/main.c" > CMakeFiles/proj.dir/main.c.i
 
 CMakeFiles/proj.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/proj.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/sf_LI2/Reversi-master4/Código_working/main.c -o CMakeFiles/proj.dir/main.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/main.c" -o CMakeFiles/proj.dir/main.c.s
 
 CMakeFiles/proj.dir/estado.c.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/estado.c.o: ../estado.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/proj.dir/estado.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/proj.dir/estado.c.o   -c /media/sf_LI2/Reversi-master4/Código_working/estado.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/proj.dir/estado.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/proj.dir/estado.c.o   -c "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/estado.c"
 
 CMakeFiles/proj.dir/estado.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/proj.dir/estado.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/sf_LI2/Reversi-master4/Código_working/estado.c > CMakeFiles/proj.dir/estado.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/estado.c" > CMakeFiles/proj.dir/estado.c.i
 
 CMakeFiles/proj.dir/estado.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/proj.dir/estado.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/sf_LI2/Reversi-master4/Código_working/estado.c -o CMakeFiles/proj.dir/estado.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/estado.c" -o CMakeFiles/proj.dir/estado.c.s
 
 CMakeFiles/proj.dir/menu.c.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/menu.c.o: ../menu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/proj.dir/menu.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/proj.dir/menu.c.o   -c /media/sf_LI2/Reversi-master4/Código_working/menu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/proj.dir/menu.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/proj.dir/menu.c.o   -c "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/menu.c"
 
 CMakeFiles/proj.dir/menu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/proj.dir/menu.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/sf_LI2/Reversi-master4/Código_working/menu.c > CMakeFiles/proj.dir/menu.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/menu.c" > CMakeFiles/proj.dir/menu.c.i
 
 CMakeFiles/proj.dir/menu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/proj.dir/menu.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/sf_LI2/Reversi-master4/Código_working/menu.c -o CMakeFiles/proj.dir/menu.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/menu.c" -o CMakeFiles/proj.dir/menu.c.s
 
 CMakeFiles/proj.dir/comandos.c.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/comandos.c.o: ../comandos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/proj.dir/comandos.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/proj.dir/comandos.c.o   -c /media/sf_LI2/Reversi-master4/Código_working/comandos.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/proj.dir/comandos.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/proj.dir/comandos.c.o   -c "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/comandos.c"
 
 CMakeFiles/proj.dir/comandos.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/proj.dir/comandos.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/sf_LI2/Reversi-master4/Código_working/comandos.c > CMakeFiles/proj.dir/comandos.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/comandos.c" > CMakeFiles/proj.dir/comandos.c.i
 
 CMakeFiles/proj.dir/comandos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/proj.dir/comandos.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/sf_LI2/Reversi-master4/Código_working/comandos.c -o CMakeFiles/proj.dir/comandos.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/comandos.c" -o CMakeFiles/proj.dir/comandos.c.s
 
 # Object files for target proj
 proj_OBJECTS = \
@@ -125,7 +125,7 @@ proj: CMakeFiles/proj.dir/menu.c.o
 proj: CMakeFiles/proj.dir/comandos.c.o
 proj: CMakeFiles/proj.dir/build.make
 proj: CMakeFiles/proj.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable proj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable proj"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proj.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/proj.dir/clean:
 .PHONY : CMakeFiles/proj.dir/clean
 
 CMakeFiles/proj.dir/depend:
-	cd /media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/sf_LI2/Reversi-master4/Código_working /media/sf_LI2/Reversi-master4/Código_working /media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug /media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug /media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles/proj.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working" "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working" "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug" "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug" "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug/CMakeFiles/proj.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/proj.dir/depend
 

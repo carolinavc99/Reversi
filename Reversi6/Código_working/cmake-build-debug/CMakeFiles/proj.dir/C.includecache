@@ -6,19 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/media/sf_LI2/Reversi-master4/Código_working/comandos.c
+/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/comandos.c
 comandos.h
-/media/sf_LI2/Reversi-master4/Código_working/comandos.h
+/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/comandos.h
 string.h
 -
 stdio.h
 -
 
-/media/sf_LI2/Reversi-master4/Código_working/comandos.h
+/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/comandos.h
 estado.h
-/media/sf_LI2/Reversi-master4/Código_working/estado.h
+/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/estado.h
 
-/media/sf_LI2/Reversi-master4/Código_working/estado.h
+/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/estado.c
+stdio.h
+-
+estado.h
+/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/estado.h
+
+/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/estado.h
 stdio.h
 -
 

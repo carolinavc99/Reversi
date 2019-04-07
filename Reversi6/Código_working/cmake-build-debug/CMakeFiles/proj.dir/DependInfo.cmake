@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/media/sf_LI2/Reversi-master4/Código_working/comandos.c" "/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles/proj.dir/comandos.c.o"
-  "/media/sf_LI2/Reversi-master4/Código_working/estado.c" "/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles/proj.dir/estado.c.o"
-  "/media/sf_LI2/Reversi-master4/Código_working/main.c" "/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles/proj.dir/main.c.o"
-  "/media/sf_LI2/Reversi-master4/Código_working/menu.c" "/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles/proj.dir/menu.c.o"
+  "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/comandos.c" "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug/CMakeFiles/proj.dir/comandos.c.o"
+  "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/estado.c" "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug/CMakeFiles/proj.dir/estado.c.o"
+  "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/main.c" "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug/CMakeFiles/proj.dir/main.c.o"
+  "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/menu.c" "/Users/anasofia/Documents/Universidade/2º Semestre/Laboratório de Informática II/Trabalho (Grupo 6) /Reversi6/Código_working/cmake-build-debug/CMakeFiles/proj.dir/menu.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
