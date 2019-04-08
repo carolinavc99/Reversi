@@ -24,6 +24,24 @@ ESTADO novoJogo (VALOR peca) {
 }
 
 
+ESTADO continuaJogo (ESTADO e, char input []) {
+
+    FILE *fp;
+    char nome[20];
+
+    sscanf(input, "%*s %s", nome);
+    strcat(nome, ".txt");
+
+    fp = fopen(nome, "r");
+
+    if(fp == NULL) printf("Jogo inexistente.");
+
+    else printf("Hahaha");
+
+    return e;
+}
+
+
 void guardar (ESTADO e, char input[]) {
     char conteudo[300]; // o que vai estar escrito no ficheiro
     FILE *fp;

@@ -19,6 +19,8 @@ void guardar (ESTADO e, char input[]);
 
 ESTADO undo (ESTADO e);
 
+ESTADO continuaJogo (ESTADO e, char input []);
+
 /*////////////////////////////////////////////////////////*/
 
 typedef struct celula {

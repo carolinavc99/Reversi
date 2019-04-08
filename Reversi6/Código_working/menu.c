@@ -64,10 +64,12 @@ ESTADO menu (ESTADO e) { // interpretador
                     break;
 
                 case 'L':
+                    e = continuaJogo (e, input);
                     break;
 
                 case 'E':
-                    guardar(e, input);
+                    if(e.peca == VAZIA) printf("\nCrie um novo jogo ou continue um jogo já existente.\n");
+                    else guardar(e, input);
                     break;
 
                 case 'J':
@@ -77,7 +79,8 @@ ESTADO menu (ESTADO e) { // interpretador
                         if (validarJogada(e, arg1, arg2) == 1)
                             printf("\nJogada inválida.\n");
                         else
-                            e = jogar(e, arg1, arg2);  // coloca a peça no sítio, se tal for possível
+                            if(e.peca == VAZIA) printf("\nCrie um novo jogo ou continue um jogo já existente.\n");
+                            else e = jogar(e, arg1, arg2);  // coloca a peça no sítio, se tal for possível
                     }
                     novaJogada(j); // esta função incrementa a struct de células com cada nova jogada
                     break;
@@ -93,15 +96,21 @@ ESTADO menu (ESTADO e) { // interpretador
         else { // se a função não leva argumentos
             switch(opcao) {
                 case 'S':
-                    v = calcJogadasValidas (e);
-                    posicoesValidas (e, v);
+                    if(e.peca == VAZIA) printf("\nCrie um novo jogo ou continue um jogo já existente.\n");
+                    else {
+                        v = calcJogadasValidas(e);
+                        posicoesValidas(e, v);
+                    }
                     break;
 
                 case 'H':
+                    if(e.peca == VAZIA) printf("\nCrie um novo jogo ou continue um jogo já existente.\n");
+                    // else
                     break;
 
                 case 'U':
-                    undo(e);
+                    if(e.peca == VAZIA) printf("\nCrie um novo jogo ou continue um jogo já existente.\n");
+                    else undo(e);
                     break;
 
                 case 'Q':
