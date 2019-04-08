@@ -1,3 +1,0 @@
-/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles/proj.dir
-/media/sf_LI2/Reversi-master4/Código_working/cmake-build-debug/CMakeFiles/edit_cache.dir
