@@ -27,7 +27,22 @@ ESTADO novoJogo (VALOR peca) {
     return e;
 }
 
+VALOR chartovalor( char c){
+    switch(c) {
+        case 'X': return  VALOR_X;
+        case 'O': return  VALOR_O;
+    }
+    return VAZIA;
+}
 
+//usar depois o doxygen para gerar a documentação
+
+/**
+ * função para ......
+ * @param e estodo anterior ....
+ * @param nome parametro com ....
+ * @return valor do novo estado
+ */
 ESTADO continuaJogo (ESTADO e, char nome[]) {
     FILE *fp;
     char l[20];
@@ -41,54 +56,47 @@ ESTADO continuaJogo (ESTADO e, char nome[]) {
     }
     strcat(nome, ".txt");
 
-    strcpy(e.nome, nome);
-
     fp = fopen(nome, "r+");
 
-    if(fp == NULL)
+    if ((fp == NULL) && (e.modo == ' ' && e.peca == VAZIA)) { // não existe o ficheiro pedido E não existe ficheiro atual
+        printf("Jogo inexistente.\n"
+               "Por favor começe um jogo novo ou continue um jogo eistente.");
 
+    }
+    else if (fp == NULL) { // não existe ficheiro pedido mas existe ficheiro atual => printa o atual
         printf("Jogo inexistente.");
+        printa(e);
+        return e;
+    }
 
     else {
+
+        strcpy(e.nome, nome);
 
         fscanf(fp, "%s", l);
         printf("\n%s\n", l);
 
-        if(l[0] == 'M') e.modo = '0';
+        if (l[0] == 'M') e.modo = '0';
         else e.modo = '1';
 
-        if(l[1] == 'X') e.peca = VALOR_X;
+        if (l[1] == 'X') e.peca = VALOR_X;
         else e.peca = VALOR_O;
 
-        for(int i=0; i<8; i++) {              // percorre as linhas
+        for (int i = 0; i < 8; i++) {              // percorre as linhas
 
             fscanf(fp, "%s", l);
             printf("%s\n", l);
 
-            for (int j=0; j<8; j++) {         // percorre as colunas
-
-                switch(l[j]) {
-
-                    case 'X':
-                        e.grelha[i][j] = VALOR_X;
-                        break;
-
-                    case 'O':
-                        e.grelha[i][j] = VALOR_O;
-                        break;
-
-                    default:
-                        e.grelha[i][j] = VAZIA;
-                        break;
-
-                }
+            for (int j = 0; j < 8; j++) {         // percorre as colunas
+                e.grelha[i][j] = chartovalor(l[j]);
 
             }
         }
 
+        fclose(fp);
     }
 
-    fclose(fp);
+
     printa (e);
     return e;
 }

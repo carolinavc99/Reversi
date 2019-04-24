@@ -6,29 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/media/sf_LI2/Reversi-master 5/Código_working/comandos.h
-estado.h
-/media/sf_LI2/Reversi-master 5/Código_working/estado.h
-
-/media/sf_LI2/Reversi-master 5/Código_working/estado.h
-stdio.h
--
-
-/media/sf_LI2/Reversi-master 5/Código_working/menu.c
-menu.h
-/media/sf_LI2/Reversi-master 5/Código_working/menu.h
+/media/sf_LI2/Reversi-master 5/Código_working/comandos.c
 comandos.h
 /media/sf_LI2/Reversi-master 5/Código_working/comandos.h
 stack.h
 /media/sf_LI2/Reversi-master 5/Código_working/stack.h
+string.h
+-
 stdio.h
 -
-ctype.h
--
 
-/media/sf_LI2/Reversi-master 5/Código_working/menu.h
+/media/sf_LI2/Reversi-master 5/Código_working/comandos.h
 estado.h
 /media/sf_LI2/Reversi-master 5/Código_working/estado.h
+
+/media/sf_LI2/Reversi-master 5/Código_working/estado.h
+stdio.h
+-
 
 /media/sf_LI2/Reversi-master 5/Código_working/stack.h
 estado.h

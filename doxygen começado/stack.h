@@ -7,7 +7,7 @@ struct JOGADA {
     struct JOGADA* prox;
 };
 
-struct JOGADA* topo;
+//struct JOGADA* topo;
 
 void push(ESTADO e);
 void pop();

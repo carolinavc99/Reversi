@@ -8,11 +8,13 @@ int main() {
 
     ESTADO e = {0}; // tabuleiro vazio
 
+    struct JOGADA* stackUndo;
+
     e.modo = ' ';
     e.peca = VAZIA;
     e.score [0] = 2;
     e.score [1] = 2;
-    strcpy(e.nome, "."); // o '=' não funciona em «e.nome = "."»
+    strcpy(e.nome, ".");
 
 
     // estado inicial do tabuleiro. Inicio do jogo!
@@ -21,7 +23,7 @@ int main() {
     e.grelha[3][3] = VALOR_O;
     e.grelha[4][4] = VALOR_O;
 
-    menu(e);
+    menu(e,stackUndo);
 
     return 0;
 }

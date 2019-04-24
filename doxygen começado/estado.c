@@ -16,10 +16,9 @@ VALOR chrtovalor(char c){
 
 // exemplo de uma função para imprimir o estado (Tabuleiro)
 void printa(ESTADO e) {
-
     char c = ' ';
     int k = 1;
-    char m, j;
+    char j;
 
     //Atualiza o score.
     e = score(e);
