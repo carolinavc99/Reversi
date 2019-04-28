@@ -6,27 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/media/sf_LI2/Reversi-master 5/Código_working/comandos.c
+/Users/anasofia/Downloads/Reversi-master/SemTxt/comandos.c
 comandos.h
-/media/sf_LI2/Reversi-master 5/Código_working/comandos.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/comandos.h
 stack.h
-/media/sf_LI2/Reversi-master 5/Código_working/stack.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/stack.h
 string.h
 -
 stdio.h
 -
 
-/media/sf_LI2/Reversi-master 5/Código_working/comandos.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/comandos.h
 estado.h
-/media/sf_LI2/Reversi-master 5/Código_working/estado.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/estado.h
 stack.h
-/media/sf_LI2/Reversi-master 5/Código_working/stack.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/stack.h
 
-/media/sf_LI2/Reversi-master 5/Código_working/estado.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/estado.h
 stdio.h
 -
 
-/media/sf_LI2/Reversi-master 5/Código_working/stack.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/menu.c
+menu.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/menu.h
+comandos.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/comandos.h
+stack.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/stack.h
+stdio.h
+-
+ctype.h
+-
+
+/Users/anasofia/Downloads/Reversi-master/SemTxt/menu.h
 estado.h
-/media/sf_LI2/Reversi-master 5/Código_working/estado.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/estado.h
+stack.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/stack.h
+
+/Users/anasofia/Downloads/Reversi-master/SemTxt/stack.h
+estado.h
+/Users/anasofia/Downloads/Reversi-master/SemTxt/estado.h
 

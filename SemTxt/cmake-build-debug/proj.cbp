@@ -8,110 +8,108 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/media/sf_LI2/Reversi-master 5/Código_working/cmake-build-debug"/>
+				<Option working_dir="/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/media/sf_LI2/Reversi-master 5/Código_working/cmake-build-debug"/>
+				<Option working_dir="/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="proj">
-				<Option output="/media/sf_LI2/Reversi-master 5/Código_working/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/sf_LI2/Reversi-master 5/Código_working/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="proj/fast">
-				<Option output="/media/sf_LI2/Reversi-master 5/Código_working/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/sf_LI2/Reversi-master 5/Código_working/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/media/sf_LI2/Reversi-master 5/Código_working/cmake-build-debug"/>
+				<Option working_dir="/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/Reversi-master\ 5/Código_working/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="proj">
+				<Option output="/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="proj/fast">
+				<Option output="/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/anasofia/Downloads/Reversi-master/SemTxt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/bot.c">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/bot.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/bot.h">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/bot.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/comandos.c">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/comandos.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/comandos.h">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/comandos.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/estado.c">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/estado.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/estado.h">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/estado.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/main.c">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/main.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/menu.c">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/menu.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/menu.h">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/menu.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/stack.c">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/stack.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/stack.h">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/stack.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/Reversi-master 5/Código_working/CMakeLists.txt">
+		<Unit filename="/Users/anasofia/Downloads/Reversi-master/SemTxt/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

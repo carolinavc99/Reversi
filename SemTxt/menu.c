@@ -33,6 +33,12 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
                  ". (Q) Sair                                      .\n"
                  ". . . . . . . . . . . . . . . . . . . . . . . . .\n");
 
+        // Desenha um cursor antecedido do próximo jogador a efetuar a jogada.
+        if(e.peca == VALOR_O) printf("\nO ➢ ");
+        else {
+            if(e.peca == VALOR_X) printf("\nX ➢ ");
+            else printf("\n  ➢ ");
+        }
 
         fgets(input, 1000, stdin); // guarda em 'input', well, o input
 
