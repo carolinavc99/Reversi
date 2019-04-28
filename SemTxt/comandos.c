@@ -45,8 +45,9 @@ VALOR chartovalor( char c){
  */
 ESTADO continuaJogo (ESTADO e, char nome[]) {  // nome é sem extensão, nome2 é COM extensão
     FILE *fp;
-    char l[20];
+    char l[20], mj[20];
     char nome2[1024];
+    int x;
 
 
     for (int j=0; nome[j]; j++) {
@@ -55,6 +56,9 @@ ESTADO continuaJogo (ESTADO e, char nome[]) {  // nome é sem extensão, nome2 �
             return e;
         }
     }
+
+    strcpy(nome2, nome);
+
     // colocar a extensão
     strcat(nome2, ".txt");
 
@@ -79,25 +83,29 @@ ESTADO continuaJogo (ESTADO e, char nome[]) {  // nome é sem extensão, nome2 �
         // coloca o nome do ficheiro no estado
         strcpy(e.nome, nome);
 
-        fscanf(fp, "%s", l);
-        printf("\n%s\n", l);
+        fgets(mj, 100, fp);
 
-        if (l[0] == 'M') e.modo = '0';
+        if (mj[0] == 'M') e.modo = '0';
         else e.modo = '1';
 
-        if (l[1] == 'X') e.peca = VALOR_X;
+        if (mj[2] == 'X') e.peca = VALOR_X;
         else e.peca = VALOR_O;
 
-        for (int i = 0; i < 8; i++) {              // percorre as linhas
 
-            fscanf(fp, "%s", l);
-            printf("%s\n", l);
+        for(int i=0; i<8; i++) {
 
-            for (int j = 0; j < 8; j++) {         // percorre as colunas
-                e.grelha[i][j] = chartovalor(l[j]);
+            x=0;
+
+            fgets(l, 20, fp);
+
+            for(int j=0; j<15; j=j+2) {
+
+                e.grelha[i][x] = chartovalor(l[j]);
+                x++;
 
             }
         }
+
         fclose(fp);
     }
 
@@ -110,12 +118,15 @@ void guardar (ESTADO e, char nome[]) { // nome é sem extensão, nome2 é COM ex
     FILE *fp;
     char nome2[1024];
 
+
     for (int j=0; nome[j]; j++) {
         if (nome[j] == '.') {           // se o nome do ficheiro conter um ponto é inválido
             printf("\nO nome não pode conter '.'\n");   // NOTA: '.' é o caso base de nome para um jogo que nunca foi guardado
             return;
         }
     }
+
+
 
     // coloca no estado o nome
     strcpy(e.nome, nome);
@@ -124,11 +135,13 @@ void guardar (ESTADO e, char nome[]) { // nome é sem extensão, nome2 é COM ex
     strcpy(nome2, nome);
     strcat(nome2, ".txt");
 
+
+
     // escrever o estado no ficheiro
     if (e.modo == '0')
-        strcpy (conteudo, "M");
+        strcpy (conteudo, "M ");
     else
-        strcpy (conteudo, "A");
+        strcpy (conteudo, "A ");
 
     if (e.peca == VALOR_X)
         strcat (conteudo, "X\n");
@@ -151,8 +164,9 @@ void guardar (ESTADO e, char nome[]) { // nome é sem extensão, nome2 é COM ex
                     strcat (conteudo, "-");
                     break;
                 }
+                default: break;
             }
-            //strcat (conteudo, " ");
+            strcat (conteudo, " ");
         }
         strcat (conteudo, "\n");
     }
