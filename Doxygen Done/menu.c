@@ -24,7 +24,8 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
 
     while (toupper(opcao[0]) != 'Q') {
 
-        printf("\n                            ===========                            \n"
+        printf("\n"
+               "                            ===========                            \n"
                "                            | REVERSI |                            \n"
                "                            ===========                            \n"
                "                                                                   \n"
@@ -59,10 +60,6 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
         sscanf(input, "%s", opcao);
 
         opcao[0] = toupper(opcao[0]);
-
-        // prints-teste -- eliminar
-        printf("input <%s>\n", input);
-        printf("opcao <%s>\n", opcao);
 
 
         switch (opcao[0]) {
@@ -123,12 +120,23 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
                         }
                     }
                 }
-                printf("jog: %d", jogadas_efetuadas);
                 break;
 
-            case 'A':
+                // ???ALTEREI ESTRUTURA???
+            case 'A':     // a função bot funciona dependendo da dificuldade do jogo, sendo que esta traduz para
+                // o número de jogadas à frente que o bot verifica
                 sscanf(input, "%*s %c", &arg1);
-                //bot(arg1);    // a função bot funciona dependendo da dificuldade do jogo
+                if (arg1 == '1') // Fácil
+                    bot(0);         // joga aleatoriamente
+                else if (arg1 == '2') // Médio
+                    bot(3);         // vê 3 jogadas à frente
+                else if (arg1 == '3') // Difícil
+                    bot(6);         // vê 6 jogadas à frente
+                else
+                    printf("Dificuldade inválida. As dificuldades disponíveis são:\n"
+                           "    | '1' Fácil\n"
+                           "    | '2' Média\n"
+                           "    | '1' Difícil\n");
                 break;
 
             case 'S':
@@ -155,7 +163,6 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
                 else {
                     topo = undo(&e, topo);
                     jogadas_efetuadas--;
-                    printf("jog undo: %d", jogadas_efetuadas);
                 }
                 break;
 
@@ -168,23 +175,23 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
                 break;
 
             case 'D':
-                printf("\n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-                       "\n.      INPUT       ||                                     AÇÃO                                        ."
-                       "\n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-                       "\n. N <peça>         || Inicia um novo jogo em que o primeiro a jogar é o jogador com a peça indicada.  ."
-                       "\n. L <ficheiro>     || Continua um jogo previamente guardado no ficheiro pedido.                       ."
-                       "\n. E <ficheiro>     || Escreve em ficheiro (guarda) o estado atual do jogo.                            ."
-                       "\n. J <L> <C>        || Joga a peça atual na posição (L,C). O comando J 1 1 coloca a peça atual no      ."
-                       "\n.                      canto superior esquerdo, se tal for possível                                   ."
-                       "\n. S                || Imprime um ponto ‘.’ nas posições em que a jogada é válida.                     ."
-                       "\n. H                || Mostra uma sugestão de jogada. É colocado um ‘?’ no sitio sugerido.             ."
-                       "\n. U                || Desfaz a última jogada. Permite desfazer até ao estado inicial do jogo, ou      ."
-                       "\n.                      até ao último 'E' ou 'L' efetuado.                                             ."
-                       "\n. A <peça> <nível> || Cria um novo jogo contra ‘bot’ em que o computador joga com a peça contra um    ."
-                       "\n.                      bot de nível (3 níveis possíveis). Neste modo quem joga primeiro é sempre o    ."
-                       "\n.                      jogador com a peça ‘X’.                                                        ."
-                       "\n. Q                || Sair do jogo.                                                                   ."
-                       "\n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+                printf("\n======================================================================================================="
+                       "\n|      INPUT       ||                                     AÇÃO                                        |"
+                       "\n======================================================================================================="
+                       "\n| N <peça>         || Inicia um novo jogo em que o primeiro a jogar é o jogador com a peça indicada.  |"
+                       "\n| L <ficheiro>     || Continua um jogo previamente guardado no ficheiro pedido.                       |"
+                       "\n| E <ficheiro>     || Escreve em ficheiro (guarda) o estado atual do jogo.                            |"
+                       "\n| J <L> <C>        || Joga a peça atual na posição (L,C). O comando J 1 1 coloca a peça atual no      |"
+                       "\n|                      canto superior esquerdo, se tal for possível                                   |"
+                       "\n| S                || Imprime um ponto ‘.’ nas posições em que a jogada é válida.                     |"
+                       "\n| H                || Mostra uma sugestão de jogada. É colocado um ‘?’ no sitio sugerido.             |"
+                       "\n| U                || Desfaz a última jogada. Permite desfazer até ao estado inicial do jogo, ou      |"
+                       "\n|                      até ao último 'E' ou 'L' efetuado.                                             |"
+                       "\n| A <peça> <nível> || Cria um novo jogo contra ‘bot’ em que o computador joga com a peça contra um    |"
+                       "\n|                      bot de nível (3 níveis possíveis). Neste modo quem joga primeiro é sempre o    |"
+                       "\n|                      jogador com a peça ‘X’.                                                        |"
+                       "\n| Q                || Sair do jogo.                                                                   |"
+                       "\n======================================================================================================="
                        "\n");
                 break;
 

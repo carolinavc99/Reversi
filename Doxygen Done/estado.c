@@ -18,12 +18,12 @@ VALOR chrtovalor(char c){
  */
 void printaScore (int x, int o) {
 
-    if (x<10 && o<10)        printf("        X: %d  |  O: %d        *\n", x, o);
+    if (x<10 && o<10)        printf("        X: %d  |  O: %d        |\n", x, o);
     else {
-        if (x>9 && o>9)      printf("        X: %d |  O: %d       *\n", x, o);
+        if (x>9 && o>9)      printf("        X: %d |  O: %d       |\n", x, o);
         else {
-            if (x<10 && o>9) printf("        X: %d  |  O: %d       *\n", x, o);
-            else             printf("        X: %d |  O: %d        *\n", x, o);
+            if (x<10 && o>9) printf("        X: %d  |  O: %d       |\n", x, o);
+            else             printf("        X: %d |  O: %d        |\n", x, o);
         }
     }
 
@@ -33,7 +33,7 @@ void printaScore (int x, int o) {
  * Imprime um estado.
  * @param e Estado a ser impresso.
  */
-void printa(ESTADO e) {             // exemplo de uma função para imprimir o estado (Tabuleiro)
+void printa(ESTADO e) {
     char c = ' ';
     int k = 1;
     char j;
@@ -47,25 +47,25 @@ void printa(ESTADO e) {             // exemplo de uma função para imprimir o e
         else j = ' '; //printf("\nJogador:  | ");
     }
 
-    printf("\n* * * * * * * * * * * * * * * * * * * * * * * * * *\n"
-           "*                                                 *\n");
+    printf("\n===================================================\n"
+           "|                                                 |\n");
 
     if(e.modo == '0')
-        printf("* Modo: Manual                                    *\n");
+        printf("| Modo: Manual                                    |\n");
     else {
         if (e.modo == '1') printf("\nModo: Contra o computador:\n");
         else printf("Modo:  \n");
     }
 
-    printf( "*                                                 *\n"
-            "*    1 2 3 4 5 6 7 8                              *\n");
+    printf( "|                                                 |\n"
+            "|    1 2 3 4 5 6 7 8                              |\n");
 
 
 
 
     for (int i = 0; i < 8; i++) {
 
-        printf("*  %d ",k);
+        printf("|  %d ",k);
 
         for (int j = 0; j < 8; j++) {
             switch (e.grelha[i][j]) {
@@ -91,19 +91,19 @@ void printa(ESTADO e) {             // exemplo de uma função para imprimir o e
 
         }
 
-        if(k==3) printf(    "         Jogador: %c          *\n", j);
+        if(k==3) printf(    "         Jogador: %c          |\n", j);
         else {
             if(k==5) printaScore(e.score[0], e.score[1]);
 
 
-            else printf("                             *\n");
+            else printf("                             |\n");
         }
 
         k ++;
     }
 
-    printf(  "*                                                 *"
-             "\n* * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+    printf(  "|                                                 |"
+             "\n===================================================\n");
 
 }
 

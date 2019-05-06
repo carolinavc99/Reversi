@@ -12,15 +12,21 @@ void bot (int n) {
         case 0:
             break;
 
-        case 1:
+        case 3:
             break;
 
-        case 2:
+        case 6:
             break;
 
         default:
             printf("Erro com o bot.");
-            exit(1);
     }
 
 }
+
+/*
+ * Algoritmo tem de ser minmax:
+ *  - minimiza a pontuação do adversário
+ *  - maximiza a pontuação do bot
+ *
+ *  */
