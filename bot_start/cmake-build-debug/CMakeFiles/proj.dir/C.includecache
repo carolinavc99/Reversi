@@ -1,0 +1,84 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/sf_LI2/Doxygen Done/bot.c
+bot.h
+/media/sf_LI2/Doxygen Done/bot.h
+stdio.h
+-
+stdlib.h
+-
+
+/media/sf_LI2/Doxygen Done/bot.h
+
+/media/sf_LI2/Doxygen Done/comandos.c
+comandos.h
+/media/sf_LI2/Doxygen Done/comandos.h
+stack.h
+/media/sf_LI2/Doxygen Done/stack.h
+string.h
+-
+stdio.h
+-
+
+/media/sf_LI2/Doxygen Done/comandos.h
+estado.h
+/media/sf_LI2/Doxygen Done/estado.h
+stack.h
+/media/sf_LI2/Doxygen Done/stack.h
+
+/media/sf_LI2/Doxygen Done/estado.c
+stdio.h
+-
+estado.h
+/media/sf_LI2/Doxygen Done/estado.h
+
+/media/sf_LI2/Doxygen Done/estado.h
+stdio.h
+-
+
+/media/sf_LI2/Doxygen Done/main.c
+stdio.h
+-
+estado.h
+/media/sf_LI2/Doxygen Done/estado.h
+string.h
+-
+menu.h
+/media/sf_LI2/Doxygen Done/menu.h
+
+/media/sf_LI2/Doxygen Done/menu.c
+menu.h
+/media/sf_LI2/Doxygen Done/menu.h
+comandos.h
+/media/sf_LI2/Doxygen Done/comandos.h
+stack.h
+/media/sf_LI2/Doxygen Done/stack.h
+bot.h
+/media/sf_LI2/Doxygen Done/bot.h
+stdio.h
+-
+ctype.h
+-
+
+/media/sf_LI2/Doxygen Done/menu.h
+estado.h
+/media/sf_LI2/Doxygen Done/estado.h
+stack.h
+/media/sf_LI2/Doxygen Done/stack.h
+
+/media/sf_LI2/Doxygen Done/stack.c
+stdlib.h
+-
+stack.h
+/media/sf_LI2/Doxygen Done/stack.h
+
+/media/sf_LI2/Doxygen Done/stack.h
+estado.h
+/media/sf_LI2/Doxygen Done/estado.h
+
