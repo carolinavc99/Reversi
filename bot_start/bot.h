@@ -5,7 +5,8 @@
 #ifndef PROJ_BOT_H
 #define PROJ_BOT_H
 
-void bot (int n);
+ESTADO bot (int n, ESTADO e, char letra);
 
+int minimax(ESTADO e, int nivel, char letra);
 
 #endif //PROJ_BOT_H

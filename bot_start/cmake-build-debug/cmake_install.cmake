@@ -1,4 +1,4 @@
-# Install script for directory: /media/sf_LI2/Doxygen Done
+# Install script for directory: /media/sf_LI2/bot_start
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/sf_LI2/Doxygen Done/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/sf_LI2/bot_start/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

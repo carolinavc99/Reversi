@@ -1,25 +1,29 @@
 //
 // Created by carolinavc on 4/21/19.
 //
-
+#include "estado.h"
 #include "bot.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 // recebe um inteiro que determina qual a dificuldade do bot
-void bot (int n) {
+ESTADO bot (int n, ESTADO e, char letra) {
     switch(n) {
         case 0:
+            return e;
             break;
 
         case 3:
+            return e;
             break;
 
         case 6:
+            return e;
             break;
 
         default:
             printf("Erro com o bot.");
+            return e;
     }
 
 }
@@ -35,9 +39,9 @@ void bot (int n) {
 /*
  ESQUELETO MINMAX
 */
- int minimax(node, depth, maximizingPlayer) {
-    if (depth = 0 || node is leaf)
-        return score_of_node;
+ int minimax(ESTADO e, int nivel, char letra) {
+    if (nivel = 0 || (node is leaf))
+        return score(e);
     if (we are the bot) {
         value = -infinito;
         for (each child_of_node)

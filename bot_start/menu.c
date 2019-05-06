@@ -125,18 +125,20 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
                 // ???ALTEREI ESTRUTURA???
             case 'A':     // a função bot funciona dependendo da dificuldade do jogo, sendo que esta traduz para
                 // o número de jogadas à frente que o bot verifica
-                sscanf(input, "%*s %c", &arg1);
-                if (arg1 == '1') // Fácil
-                    bot(0);         // joga aleatoriamente
-                else if (arg1 == '2') // Médio
-                    bot(3);         // vê 3 jogadas à frente
-                else if (arg1 == '3') // Difícil
-                    bot(6);         // vê 6 jogadas à frente
-                else
+                sscanf(input, "%*s %c %d", &arg1, &arg2);
+                if (toupper(arg1) != 'X' && toupper(arg1) != 'O') // peça inválida
+                    printf("Peça inválida. Escolha 'X' ou 'O'.");
+                else if (arg2 != '1' && arg2 != '2' && arg2 != '3') // dificuldade inválida
                     printf("Dificuldade inválida. As dificuldades disponíveis são:\n"
                            "    | '1' Fácil\n"
                            "    | '2' Média\n"
                            "    | '1' Difícil\n");
+                if (arg2 == '1') // Fácil
+                    bot(0, e, arg1);         // joga aleatoriamente (0 jogadas à frente)
+                else if (arg2 == '2') // Médio
+                    bot(3, e, arg1);         // vê 3 jogadas à frente
+                else if (arg2 == '3') // Difícil
+                    bot(6, e, arg1);         // vê 6 jogadas à frente
                 break;
 
             case 'S':

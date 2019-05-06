@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/media/sf_LI2/Doxygen Done/bot.c" "/media/sf_LI2/Doxygen Done/cmake-build-debug/CMakeFiles/proj.dir/bot.c.o"
-  "/media/sf_LI2/Doxygen Done/comandos.c" "/media/sf_LI2/Doxygen Done/cmake-build-debug/CMakeFiles/proj.dir/comandos.c.o"
-  "/media/sf_LI2/Doxygen Done/estado.c" "/media/sf_LI2/Doxygen Done/cmake-build-debug/CMakeFiles/proj.dir/estado.c.o"
-  "/media/sf_LI2/Doxygen Done/main.c" "/media/sf_LI2/Doxygen Done/cmake-build-debug/CMakeFiles/proj.dir/main.c.o"
-  "/media/sf_LI2/Doxygen Done/menu.c" "/media/sf_LI2/Doxygen Done/cmake-build-debug/CMakeFiles/proj.dir/menu.c.o"
-  "/media/sf_LI2/Doxygen Done/stack.c" "/media/sf_LI2/Doxygen Done/cmake-build-debug/CMakeFiles/proj.dir/stack.c.o"
+  "/media/sf_LI2/bot_start/bot.c" "/media/sf_LI2/bot_start/cmake-build-debug/CMakeFiles/proj.dir/bot.c.o"
+  "/media/sf_LI2/bot_start/comandos.c" "/media/sf_LI2/bot_start/cmake-build-debug/CMakeFiles/proj.dir/comandos.c.o"
+  "/media/sf_LI2/bot_start/estado.c" "/media/sf_LI2/bot_start/cmake-build-debug/CMakeFiles/proj.dir/estado.c.o"
+  "/media/sf_LI2/bot_start/main.c" "/media/sf_LI2/bot_start/cmake-build-debug/CMakeFiles/proj.dir/main.c.o"
+  "/media/sf_LI2/bot_start/menu.c" "/media/sf_LI2/bot_start/cmake-build-debug/CMakeFiles/proj.dir/menu.c.o"
+  "/media/sf_LI2/bot_start/stack.c" "/media/sf_LI2/bot_start/cmake-build-debug/CMakeFiles/proj.dir/stack.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
