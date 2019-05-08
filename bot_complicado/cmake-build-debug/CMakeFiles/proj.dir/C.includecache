@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/sf_LI2/bot_start/bot.c
+estado.h
+/media/sf_LI2/bot_start/estado.h
+bot.h
+/media/sf_LI2/bot_start/bot.h
+comandos.h
+/media/sf_LI2/bot_start/comandos.h
+stdio.h
+-
+stdlib.h
+-
+ctype.h
+-
+
+/media/sf_LI2/bot_start/bot.h
+
+/media/sf_LI2/bot_start/comandos.h
+estado.h
+/media/sf_LI2/bot_start/estado.h
+stack.h
+/media/sf_LI2/bot_start/stack.h
+
+/media/sf_LI2/bot_start/estado.h
+stdio.h
+-
+
+/media/sf_LI2/bot_start/stack.h
+estado.h
+/media/sf_LI2/bot_start/estado.h
+
