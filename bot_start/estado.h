@@ -33,5 +33,8 @@ ESTADO score (ESTADO e);
 
 VALOR chrtovalor(char c);
 
+int min(int a, int b);
+int max(int a, int b);
+
 #endif //PROJ_ESTADO_H
 

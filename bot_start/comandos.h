@@ -21,6 +21,8 @@ ESTADO continuaJogo (ESTADO e, char input []);
 
 struct JOGADA* novaJogada (ESTADO e, int linha, int coluna, struct JOGADA* topo); // função que incrementa a stack de jogadas já feitas
 
+int passaJogada (ESTADO e, VALOR p);
+
 #endif //PROJ_COMANDOS_H
 
 

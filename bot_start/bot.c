@@ -3,10 +3,18 @@
 //
 #include "estado.h"
 #include "bot.h"
+#include "comandos.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
-// recebe um inteiro que determina qual a dificuldade do bot
+/**
+ * Devolve o estado com a jogada feita/escolhida pelo bot.
+ * @param n Dificuldade
+ * @param e Estado atual
+ * @param letra Letra pertencente ao bot
+ * @return Estado onde o bot já jogou
+ */
 ESTADO bot (int n, ESTADO e, char letra) {
     switch(n) {
         case 0:
@@ -28,35 +36,35 @@ ESTADO bot (int n, ESTADO e, char letra) {
 
 }
 
-/*
- * Algoritmo tem de ser minmax:
- *  - minimiza a pontuação do adversário
- *  - maximiza a pontuação do bot
- *
- *  */
 
 
-/*
- ESQUELETO MINMAX
-*/
- int minimax(ESTADO e, int nivel, char letra) {
-    if (nivel = 0 || (node is leaf))
+int minmax(ESTADO e, int nivel, char letra, char letra_bot, char letra_adversario) {
+    int valor;
+
+    letra_bot = toupper(letra_bot);
+    letra_adversario = toupper(letra_adversario);
+    letra = toupper(letra);
+
+    // se é a raiz, ou se chegou ao final do jogo
+    if ((nivel == 0) || ( (passaJogada(e, chrtovalor(letra_bot)) == 1) && (passaJogada(e, chrtovalor(letra_adversario)) == 1) ) )
         return score(e);
-    if (we are the bot) {
-        value = -infinito;
-        for (each child_of_node)
-            value = max(value, minimax(child, depth - 1, letra_do_não_bot));
-        return value;\
-    }
-    else (we are NOT the bot) {
-        value = +infinite;
+    if (letra == letra_bot) {
+        valor = 0;
         for (each child of node)
-            value = min(value, minimax(child, depth - 1, letra_do_bot));
-        return value;
+            valor = max(valor, minmax(child, nivel - 1, letra_adversario, letra_bot, letra_adversario));
+        return valor;
     }
- }
+    else /*(letra == letra_adversario)*/ {
+        valor = +1000;
+        for (each child of node)
+            valor = min(valor, minmax(child, nivel - 1, letra_bot, letra_bot, letra_adversario));
+        return valor;
+    }
+}
  /*
 ( Initial call )
-minimax(origin, depth, TRUE)
+minimax(raiz, nivel, letra_do_bot)
 
- */
+*/
+
+// percorre os 24 nodos de jogadas possíveis
