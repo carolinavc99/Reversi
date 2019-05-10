@@ -1,0 +1,92 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/anasofia/Desktop/Bot Level 1 Done/bot.c
+estado.h
+/Users/anasofia/Desktop/Bot Level 1 Done/estado.h
+bot.h
+/Users/anasofia/Desktop/Bot Level 1 Done/bot.h
+comandos.h
+/Users/anasofia/Desktop/Bot Level 1 Done/comandos.h
+stdio.h
+-
+stdlib.h
+-
+ctype.h
+-
+
+/Users/anasofia/Desktop/Bot Level 1 Done/bot.h
+
+/Users/anasofia/Desktop/Bot Level 1 Done/comandos.c
+comandos.h
+/Users/anasofia/Desktop/Bot Level 1 Done/comandos.h
+stack.h
+/Users/anasofia/Desktop/Bot Level 1 Done/stack.h
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+/Users/anasofia/Desktop/Bot Level 1 Done/comandos.h
+estado.h
+/Users/anasofia/Desktop/Bot Level 1 Done/estado.h
+stack.h
+/Users/anasofia/Desktop/Bot Level 1 Done/stack.h
+
+/Users/anasofia/Desktop/Bot Level 1 Done/estado.c
+stdio.h
+-
+estado.h
+/Users/anasofia/Desktop/Bot Level 1 Done/estado.h
+
+/Users/anasofia/Desktop/Bot Level 1 Done/estado.h
+stdio.h
+-
+
+/Users/anasofia/Desktop/Bot Level 1 Done/main.c
+stdio.h
+-
+estado.h
+/Users/anasofia/Desktop/Bot Level 1 Done/estado.h
+string.h
+-
+menu.h
+/Users/anasofia/Desktop/Bot Level 1 Done/menu.h
+
+/Users/anasofia/Desktop/Bot Level 1 Done/menu.c
+menu.h
+/Users/anasofia/Desktop/Bot Level 1 Done/menu.h
+comandos.h
+/Users/anasofia/Desktop/Bot Level 1 Done/comandos.h
+stack.h
+/Users/anasofia/Desktop/Bot Level 1 Done/stack.h
+bot.h
+/Users/anasofia/Desktop/Bot Level 1 Done/bot.h
+stdio.h
+-
+ctype.h
+-
+
+/Users/anasofia/Desktop/Bot Level 1 Done/menu.h
+estado.h
+/Users/anasofia/Desktop/Bot Level 1 Done/estado.h
+stack.h
+/Users/anasofia/Desktop/Bot Level 1 Done/stack.h
+
+/Users/anasofia/Desktop/Bot Level 1 Done/stack.c
+stdlib.h
+-
+stack.h
+/Users/anasofia/Desktop/Bot Level 1 Done/stack.h
+
+/Users/anasofia/Desktop/Bot Level 1 Done/stack.h
+estado.h
+/Users/anasofia/Desktop/Bot Level 1 Done/estado.h
+
