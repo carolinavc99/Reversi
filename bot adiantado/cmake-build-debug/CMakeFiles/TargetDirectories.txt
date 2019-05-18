@@ -1,3 +1,0 @@
-/media/sf_LI2/Bot Level 1 Done/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/media/sf_LI2/Bot Level 1 Done/cmake-build-debug/CMakeFiles/proj.dir
-/media/sf_LI2/Bot Level 1 Done/cmake-build-debug/CMakeFiles/edit_cache.dir
