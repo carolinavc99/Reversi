@@ -1,0 +1,3 @@
+/home/micooltb/Desktop/bot quase feito/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/micooltb/Desktop/bot quase feito/cmake-build-debug/CMakeFiles/proj.dir
+/home/micooltb/Desktop/bot quase feito/cmake-build-debug/CMakeFiles/edit_cache.dir
