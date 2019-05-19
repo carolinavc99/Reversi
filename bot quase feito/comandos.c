@@ -10,7 +10,7 @@
  * @param peca Primeiro jogador a efetuar jogada.
  * @return Estado com o tabuleiro inicial.
  */
-ESTADO novoJogo (VALOR peca, char modo) {
+ESTADO novoJogo (VALOR peca, char modo, char dificuldade) {
     ESTADO e = {0};
 
     if(modo == 'M') {
@@ -30,19 +30,16 @@ ESTADO novoJogo (VALOR peca, char modo) {
         e.grelha[3][3] = VALOR_O;
         e.grelha[4][4] = VALOR_O;
 
-        printf("\n\n#### Novo Jogo ####\n");
+        printf("\n\n====> Novo Jogo <====\n");
         printa(e);
 
     }
     else {
         e.peca = peca;
-        e.modo = '1';
+        e.modo = dificuldade;
         strcpy(e.nome, ".");
         e.score [0] = 2;
         e.score [1] = 2;
-
-        // teste
-        printf("nome: %s", e.nome);
 
         // estado inicial do tabuleiro
         e.grelha[3][4] = VALOR_X;
@@ -50,7 +47,7 @@ ESTADO novoJogo (VALOR peca, char modo) {
         e.grelha[3][3] = VALOR_O;
         e.grelha[4][4] = VALOR_O;
 
-        printf("\n\n#### Novo Jogo contra Bot ####\n");
+        printf("\n\n====> Novo Jogo contra Bot de Nível %c <====\n", dificuldade);
         printa(e);
     }
     return e;
@@ -552,7 +549,7 @@ ESTADO jogar (ESTADO e, int linha, int coluna) {
 
     //Altera o jogador no Estado.
     if(e.peca == VALOR_O) e.peca = VALOR_X;
-    else {e.peca = VALOR_O;}
+    else e.peca = VALOR_O;
 
     //Imprime estado modificado.
     printa(e);
@@ -572,7 +569,7 @@ ESTADO jogar (ESTADO e, int linha, int coluna) {
             e.peca = outro;
             if(e.modo=='1' || e.modo=='2' || e.modo=='3') {
                 if(e.peca == e.bot) {
-                    printf("\n\n#### Jogada do Bot ####\n");
+                    printf("\n\n====> Jogada do Bot <====\n");
                     e = bot(e);
                 }
 

@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/media/sf_LI2/bot 80%/bot.c" "/media/sf_LI2/bot 80%/cmake-build-debug/CMakeFiles/proj.dir/bot.c.o"
-  "/media/sf_LI2/bot 80%/comandos.c" "/media/sf_LI2/bot 80%/cmake-build-debug/CMakeFiles/proj.dir/comandos.c.o"
-  "/media/sf_LI2/bot 80%/estado.c" "/media/sf_LI2/bot 80%/cmake-build-debug/CMakeFiles/proj.dir/estado.c.o"
-  "/media/sf_LI2/bot 80%/main.c" "/media/sf_LI2/bot 80%/cmake-build-debug/CMakeFiles/proj.dir/main.c.o"
-  "/media/sf_LI2/bot 80%/menu.c" "/media/sf_LI2/bot 80%/cmake-build-debug/CMakeFiles/proj.dir/menu.c.o"
-  "/media/sf_LI2/bot 80%/stack.c" "/media/sf_LI2/bot 80%/cmake-build-debug/CMakeFiles/proj.dir/stack.c.o"
+  "/media/sf_LI2/bot quase feito/bot.c" "/media/sf_LI2/bot quase feito/cmake-build-debug/CMakeFiles/proj.dir/bot.c.o"
+  "/media/sf_LI2/bot quase feito/comandos.c" "/media/sf_LI2/bot quase feito/cmake-build-debug/CMakeFiles/proj.dir/comandos.c.o"
+  "/media/sf_LI2/bot quase feito/estado.c" "/media/sf_LI2/bot quase feito/cmake-build-debug/CMakeFiles/proj.dir/estado.c.o"
+  "/media/sf_LI2/bot quase feito/main.c" "/media/sf_LI2/bot quase feito/cmake-build-debug/CMakeFiles/proj.dir/main.c.o"
+  "/media/sf_LI2/bot quase feito/menu.c" "/media/sf_LI2/bot quase feito/cmake-build-debug/CMakeFiles/proj.dir/menu.c.o"
+  "/media/sf_LI2/bot quase feito/stack.c" "/media/sf_LI2/bot quase feito/cmake-build-debug/CMakeFiles/proj.dir/stack.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

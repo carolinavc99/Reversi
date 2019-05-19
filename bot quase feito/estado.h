@@ -26,7 +26,7 @@ typedef struct estado {
                                                       // 2-> contra computador nível 2
                                                       // 3-> contra computador nível 3
     VALOR bot;            // peça do Bot
-    char nome[30];       // nome do ficheiro de jogo (INCLUI '.txt') -- é '.' se ainda não tiver sido guardado
+    char nome[30];       // nome do ficheiro de jogo -- é '.' se ainda não tiver sido guardado
     int score[2];
 } ESTADO;
 

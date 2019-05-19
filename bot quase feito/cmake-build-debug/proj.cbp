@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/media/sf_LI2/bot 80%/cmake-build-debug"/>
+				<Option working_dir="/media/sf_LI2/bot quase feito/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/media/sf_LI2/bot 80%/cmake-build-debug"/>
+				<Option working_dir="/media/sf_LI2/bot quase feito/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="proj">
-				<Option output="/media/sf_LI2/bot 80%/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/sf_LI2/bot 80%/cmake-build-debug"/>
+				<Option output="/media/sf_LI2/bot quase feito/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/sf_LI2/bot quase feito/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -41,15 +41,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="proj/fast">
-				<Option output="/media/sf_LI2/bot 80%/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/sf_LI2/bot 80%/cmake-build-debug"/>
+				<Option output="/media/sf_LI2/bot quase feito/cmake-build-debug/proj" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/sf_LI2/bot quase feito/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -61,57 +61,57 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/media/sf_LI2/bot 80%/cmake-build-debug"/>
+				<Option working_dir="/media/sf_LI2/bot quase feito/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ 80%/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/sf_LI2/bot\ quase\ feito/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/media/sf_LI2/bot 80%/bot.c">
+		<Unit filename="/media/sf_LI2/bot quase feito/bot.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/bot.h">
+		<Unit filename="/media/sf_LI2/bot quase feito/bot.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/comandos.c">
+		<Unit filename="/media/sf_LI2/bot quase feito/comandos.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/comandos.h">
+		<Unit filename="/media/sf_LI2/bot quase feito/comandos.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/estado.c">
+		<Unit filename="/media/sf_LI2/bot quase feito/estado.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/estado.h">
+		<Unit filename="/media/sf_LI2/bot quase feito/estado.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/main.c">
+		<Unit filename="/media/sf_LI2/bot quase feito/main.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/menu.c">
+		<Unit filename="/media/sf_LI2/bot quase feito/menu.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/menu.h">
+		<Unit filename="/media/sf_LI2/bot quase feito/menu.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/stack.c">
+		<Unit filename="/media/sf_LI2/bot quase feito/stack.c">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/stack.h">
+		<Unit filename="/media/sf_LI2/bot quase feito/stack.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="/media/sf_LI2/bot 80%/CMakeLists.txt">
+		<Unit filename="/media/sf_LI2/bot quase feito/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

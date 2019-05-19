@@ -3,7 +3,7 @@
 #ifndef PROJ_COMANDOS_H
 #define PROJ_COMANDOS_H
 
-ESTADO novoJogo (VALOR peca, char modo);
+ESTADO novoJogo (VALOR peca, char modo, char dificuldade);
 
 ESTADO jogar (ESTADO e, int linha, int coluna);
 

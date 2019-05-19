@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/media/sf_LI2/bot 80%/bot.c
+/media/sf_LI2/bot quase feito/bot.c
 estado.h
-/media/sf_LI2/bot 80%/estado.h
+/media/sf_LI2/bot quase feito/estado.h
 bot.h
-/media/sf_LI2/bot 80%/bot.h
+/media/sf_LI2/bot quase feito/bot.h
 comandos.h
-/media/sf_LI2/bot 80%/comandos.h
+/media/sf_LI2/bot quase feito/comandos.h
 stdio.h
 -
 stdlib.h
@@ -20,43 +20,21 @@ stdlib.h
 ctype.h
 -
 
-/media/sf_LI2/bot 80%/bot.h
+/media/sf_LI2/bot quase feito/bot.h
 stack.h
-/media/sf_LI2/bot 80%/stack.h
+/media/sf_LI2/bot quase feito/stack.h
 
-/media/sf_LI2/bot 80%/comandos.h
+/media/sf_LI2/bot quase feito/comandos.h
 estado.h
-/media/sf_LI2/bot 80%/estado.h
+/media/sf_LI2/bot quase feito/estado.h
 stack.h
-/media/sf_LI2/bot 80%/stack.h
+/media/sf_LI2/bot quase feito/stack.h
 
-/media/sf_LI2/bot 80%/estado.h
+/media/sf_LI2/bot quase feito/estado.h
 stdio.h
 -
 
-/media/sf_LI2/bot 80%/menu.c
-menu.h
-/media/sf_LI2/bot 80%/menu.h
-comandos.h
-/media/sf_LI2/bot 80%/comandos.h
-stack.h
-/media/sf_LI2/bot 80%/stack.h
-bot.h
-/media/sf_LI2/bot 80%/bot.h
-stdio.h
--
-ctype.h
--
-string.h
--
-
-/media/sf_LI2/bot 80%/menu.h
+/media/sf_LI2/bot quase feito/stack.h
 estado.h
-/media/sf_LI2/bot 80%/estado.h
-stack.h
-/media/sf_LI2/bot 80%/stack.h
-
-/media/sf_LI2/bot 80%/stack.h
-estado.h
-/media/sf_LI2/bot 80%/estado.h
+/media/sf_LI2/bot quase feito/estado.h
 

@@ -30,7 +30,7 @@ ESTADO bot1 (ESTADO e) {
     validas[pr].l = validas[pr].l + 48;
     validas[pr].c = validas[pr].c + 48;
 
-    e = jogar (e,validas[pr].l, validas[pr].c);
+    e = jogar(e,validas[pr].l, validas[pr].c);
 
     return e;
 }
@@ -53,6 +53,9 @@ ESTADO bot (ESTADO e) {
             break;
 
         case '2': {
+            int temp_pontuacao=0;
+            //teste
+            printf("\ncaso 2 escolhido");
             int altura = 3;
             PONTO validas[25];
             int i=0;
@@ -74,17 +77,26 @@ ESTADO bot (ESTADO e) {
                 > aplica minmax a cada uma
                 > escolhe a melhor jogada
              */
-            while (validas[i].l && validas[i].c) { //percorre as jogadas válidas
+            //teste
+            printf("\ni. %d",i);
+            int j=0;
+            while (j <= i) { //percorre as jogadas válidas até chegar à última
+                //teste
+                printf("\nvalidas: linha %d, coluna %d", validas[j].l, validas[j].c);
                 // cria a raiz
-                p = criaRaiz(p->estado, validas[i], altura);
+                p = criaRaiz(e, validas[j], altura);
                 // cria a árvore de jogadas
                 p = jogTree(p, altura);
                 // minmax
-                if (pontuacao < minmax(p->estado,altura,p)) {
-                    pontuacao = minmax(p->estado,altura,p);
-                    melhor_jogada = validas[i];
+                temp_pontuacao = minmax(p->estado, altura, p);
+                if (pontuacao < temp_pontuacao) {
+                    pontuacao = temp_pontuacao;
+                    melhor_jogada = validas[j];
+                    //teste
+                    printf("\npontuacao nova: %d temp_pontuacao: %d",pontuacao, temp_pontuacao);
+                    printf("\nnova jogada: linha %d coluna %d", validas[j].l, validas[j].c);
                 }
-                i++;
+                j++;
             }
 
             e = jogar(e,melhor_jogada.l, melhor_jogada.c);
@@ -111,30 +123,32 @@ ESTADO bot (ESTADO e) {
  * @return Valor maximizado
  */
 int aux_minMAX (ESTADO e, PARENTE x, int valor) {
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->one));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->two));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->three));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->four));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->five));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->six));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->seven));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->eight));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->nine));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->ten));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->eleven));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->twelve));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->thirt));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->fourt));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->fift));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->sixt));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->sevent));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->eightt));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->ninet));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->twenty));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->tone));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->ttwo));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->tthree));
-    valor = max(valor, minmax(x->estado, x->nivel - 1, x->tfour));
+    //teste
+    printf("\nminMAX inicializada");
+    valor = max(valor, minmax(x->estado, x->nivel, x->one)); // o x->nível já vai decrescendo à medida que progride na árvore
+    valor = max(valor, minmax(x->estado, x->nivel, x->two));
+    valor = max(valor, minmax(x->estado, x->nivel, x->three));
+    valor = max(valor, minmax(x->estado, x->nivel, x->four));
+    valor = max(valor, minmax(x->estado, x->nivel, x->five));
+    valor = max(valor, minmax(x->estado, x->nivel, x->six));
+    valor = max(valor, minmax(x->estado, x->nivel, x->seven));
+    valor = max(valor, minmax(x->estado, x->nivel, x->eight));
+    valor = max(valor, minmax(x->estado, x->nivel, x->nine));
+    valor = max(valor, minmax(x->estado, x->nivel, x->ten));
+    valor = max(valor, minmax(x->estado, x->nivel, x->eleven));
+    valor = max(valor, minmax(x->estado, x->nivel, x->twelve));
+    valor = max(valor, minmax(x->estado, x->nivel, x->thirt));
+    valor = max(valor, minmax(x->estado, x->nivel, x->fourt));
+    valor = max(valor, minmax(x->estado, x->nivel, x->fift));
+    valor = max(valor, minmax(x->estado, x->nivel, x->sixt));
+    valor = max(valor, minmax(x->estado, x->nivel, x->sevent));
+    valor = max(valor, minmax(x->estado, x->nivel, x->eightt));
+    valor = max(valor, minmax(x->estado, x->nivel, x->ninet));
+    valor = max(valor, minmax(x->estado, x->nivel, x->twenty));
+    valor = max(valor, minmax(x->estado, x->nivel, x->tone));
+    valor = max(valor, minmax(x->estado, x->nivel, x->ttwo));
+    valor = max(valor, minmax(x->estado, x->nivel, x->tthree));
+    valor = max(valor, minmax(x->estado, x->nivel, x->tfour));
 
     return valor;
 }
@@ -148,30 +162,32 @@ int aux_minMAX (ESTADO e, PARENTE x, int valor) {
  * @return Valor minimizado
  */
 int aux_MINmax (ESTADO e, PARENTE x, int valor) {
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->one));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->two));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->three));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->four));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->five));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->six));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->seven));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->eight));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->nine));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->ten));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->eleven));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->twelve));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->thirt));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->fourt));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->fift));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->sixt));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->sevent));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->eightt));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->ninet));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->twenty));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->tone));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->ttwo));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->tthree));
-    valor = min(valor, minmax(x->estado, x->nivel - 1, x->tfour));
+    //teste
+    printf("\nMINmax inicializada");
+    valor = min(valor, minmax(x->estado, x->nivel, x->one));
+    valor = min(valor, minmax(x->estado, x->nivel, x->two));
+    valor = min(valor, minmax(x->estado, x->nivel, x->three));
+    valor = min(valor, minmax(x->estado, x->nivel, x->four));
+    valor = min(valor, minmax(x->estado, x->nivel, x->five));
+    valor = min(valor, minmax(x->estado, x->nivel, x->six));
+    valor = min(valor, minmax(x->estado, x->nivel, x->seven));
+    valor = min(valor, minmax(x->estado, x->nivel, x->eight));
+    valor = min(valor, minmax(x->estado, x->nivel, x->nine));
+    valor = min(valor, minmax(x->estado, x->nivel, x->ten));
+    valor = min(valor, minmax(x->estado, x->nivel, x->eleven));
+    valor = min(valor, minmax(x->estado, x->nivel, x->twelve));
+    valor = min(valor, minmax(x->estado, x->nivel, x->thirt));
+    valor = min(valor, minmax(x->estado, x->nivel, x->fourt));
+    valor = min(valor, minmax(x->estado, x->nivel, x->fift));
+    valor = min(valor, minmax(x->estado, x->nivel, x->sixt));
+    valor = min(valor, minmax(x->estado, x->nivel, x->sevent));
+    valor = min(valor, minmax(x->estado, x->nivel, x->eightt));
+    valor = min(valor, minmax(x->estado, x->nivel, x->ninet));
+    valor = min(valor, minmax(x->estado, x->nivel, x->twenty));
+    valor = min(valor, minmax(x->estado, x->nivel, x->tone));
+    valor = min(valor, minmax(x->estado, x->nivel, x->ttwo));
+    valor = min(valor, minmax(x->estado, x->nivel, x->tthree));
+    valor = min(valor, minmax(x->estado, x->nivel, x->tfour));
 
     return valor;
 }
@@ -185,8 +201,10 @@ int aux_MINmax (ESTADO e, PARENTE x, int valor) {
  * @return Pontuação do jogo se se seguir as jogadas da árvore
  */
 int minmax(ESTADO e, int nivel, PARENTE x) {
+    //teste
+    printf("\nminmax inicializada");
     int valor;
-    x->estado = e;
+    //x->estado = e;
 
     // Peça do adversario
     VALOR adv;
@@ -212,6 +230,8 @@ int minmax(ESTADO e, int nivel, PARENTE x) {
             if (e.bot == VALOR_X) {
                 valor = e.score[0];
                 valor = aux_minMAX(e, x->one, valor);
+                //teste
+                printf("\nnodo 1: %d", valor);
             }
             else {
                 valor = e.score[1];
@@ -930,7 +950,7 @@ ESTADO jogadaFilho (ESTADO e, PARENTE x) {
  * @return Raiz da árvore
  */
 PARENTE criaRaiz(ESTADO e, PONTO posicao, int altura) {
-    PARENTE p, temp;
+    PARENTE p;
     p = (PARENTE)malloc(sizeof(PARENTE));
 
     //criar raiz da árvore
@@ -938,6 +958,8 @@ PARENTE criaRaiz(ESTADO e, PONTO posicao, int altura) {
     p->linha = posicao.l;
     p->coluna = posicao.c;
     p->estado = jogadaFilho(e,p);
+
+    p = nivelTree(p,altura);
 
     return p;
 }
@@ -949,6 +971,10 @@ PARENTE criaRaiz(ESTADO e, PONTO posicao, int altura) {
  * @return Raiz da árvore
  */
 PARENTE nivelTree(PARENTE p, int altura) {
+//teste
+    printf("\nnivelTree inicializada com altura(%d) e parente: nivel(%d) linha(%d) coluna(%d)", altura, p->nivel, p->linha, p->coluna);
+    printf("\nnivelTree estado:\n");
+    printa(p->estado);
 
     // criar a lista de jogadas válidas
     ESTADO f;
@@ -965,170 +991,171 @@ PARENTE nivelTree(PARENTE p, int altura) {
         }
     }
 
+
     // cria os filhos de acordo com a lista de jogadas válidas
     // pegar no estado de p -> aplica-lhe a jogada do seu filho -> e guarda o novo estado no filho
-    if (validas[1].l && validas[1].c && altura > 0) {   // se ainda existem jogadas válidas e altura > 0
+    if (1<=i && altura > 0) {   // se ainda existem jogadas válidas e altura > 0
         p->one = (PARENTE)malloc(sizeof(PARENTE));      // reserva espaço na memória
         p->one->linha = validas[1].l;                   // coloca a jogada dentro do filho
         p->one->coluna = validas[1].c;
         p->one->nivel = p->nivel -1;                    // diminui o nivel do nodo
         p->one->estado = jogadaFilho(p->estado,p->one); // altera o estado do pai com a jogada do filho, e guarda no filho
     }
-    else if (validas[2].l && validas[2].c && altura > 0) {
+    else if (2<=i && altura > 0) {
         p->two = (PARENTE)malloc(sizeof(PARENTE));
         p->two->linha = validas[2].l;
         p->two->coluna = validas[2].c;
         p->two->nivel = p->nivel -1;
         p->two->estado = jogadaFilho(p->estado,p->two);
     }
-    else if (validas[3].l && validas[3].c && altura > 0) {
+    else if (3<=i && altura > 0) {
         p->three = (PARENTE)malloc(sizeof(PARENTE));
         p->three->linha = validas[3].l;
         p->three->coluna = validas[3].c;
         p->three->nivel = p->nivel -1;
         p->three->estado = jogadaFilho(p->estado,p->three);
     }
-    else if (validas[4].l && validas[4].c && altura > 0) {
+    else if (4<=i && altura > 0) {
         p->four = (PARENTE)malloc(sizeof(PARENTE));
         p->four->linha = validas[4].l;
         p->four->coluna = validas[4].c;
         p->four->nivel = p->nivel -1;
         p->four->estado = jogadaFilho(p->estado,p->four);
     }
-    else if (validas[5].l && validas[5].c && altura > 0) {
+    else if (5<=i && altura > 0) {
         p->five = (PARENTE)malloc(sizeof(PARENTE));
         p->five->linha = validas[5].l;
         p->five->coluna = validas[5].c;
         p->five->nivel = p->nivel -1;
         p->five->estado = jogadaFilho(p->estado,p->five);
     }
-    else if (validas[6].l && validas[6].c && altura > 0) {
+    else if (6<=i && altura > 0) {
         p->six = (PARENTE)malloc(sizeof(PARENTE));
         p->six->linha = validas[6].l;
         p->six->coluna = validas[6].c;
         p->six->nivel = p->nivel -1;
         p->six->estado = jogadaFilho(p->estado,p->six);
     }
-    else if (validas[7].l && validas[7].c && altura > 0) {
+    else if (7<=i && altura > 0) {
         p->seven = (PARENTE)malloc(sizeof(PARENTE));
         p->seven->linha = validas[7].l;
         p->seven->coluna = validas[7].c;
         p->seven->nivel = p->nivel -1;
         p->seven->estado = jogadaFilho(p->estado,p->seven);
     }
-    else if (validas[8].l && validas[8].c && altura > 0) {
+    else if (8<=i && altura > 0) {
         p->eight = (PARENTE)malloc(sizeof(PARENTE));
         p->eight->linha = validas[8].l;
         p->eight->coluna = validas[8].c;
         p->eight->nivel = p->nivel -1;
         p->eight->estado = jogadaFilho(p->estado,p->eight);
     }
-    else if (validas[9].l && validas[9].c && altura > 0) {
+    else if (9<=i && altura > 0) {
         p->nine = (PARENTE)malloc(sizeof(PARENTE));
         p->nine->linha = validas[9].l;
         p->nine->coluna = validas[9].c;
         p->nine->nivel = p->nivel -1;
         p->nine->estado = jogadaFilho(p->estado,p->nine);
     }
-    else if (validas[10].l && validas[10].c && altura > 0) {
+    else if (10<=i &&& altura > 0) {
         p->ten = (PARENTE)malloc(sizeof(PARENTE));
         p->ten->linha = validas[10].l;
         p->ten->coluna = validas[10].c;
         p->ten->nivel = p->nivel -1;
         p->ten->estado = jogadaFilho(p->estado,p->ten);
     }
-    else if (validas[11].l && validas[11].c && altura > 0) {
+    else if (11<=i && altura > 0) {
         p->eleven = (PARENTE)malloc(sizeof(PARENTE));
         p->eleven->linha = validas[11].l;
         p->eleven->coluna = validas[11].c;
         p->eleven->nivel = p->nivel -1;
         p->eleven->estado = jogadaFilho(p->estado,p->eleven);
     }
-    else if (validas[12].l && validas[12].c && altura > 0) {
+    else if (12<=i && altura > 0) {
         p->twelve = (PARENTE)malloc(sizeof(PARENTE));
         p->twelve->linha = validas[12].l;
         p->twelve->coluna = validas[12].c;
         p->twelve->nivel = p->nivel -1;
         p->twelve->estado = jogadaFilho(p->estado,p->twelve);
     }
-    else if (validas[13].l && validas[13].c && altura > 0) {
+    else if (13<=i && altura > 0) {
         p->thirt = (PARENTE)malloc(sizeof(PARENTE));
         p->thirt->linha = validas[13].l;
         p->thirt->coluna = validas[13].c;
         p->thirt->nivel = p->nivel -1;
         p->thirt->estado = jogadaFilho(p->estado,p->thirt);
     }
-    else if (validas[14].l && validas[14].c && altura > 0) {
+    else if (14<=i && altura > 0) {
         p->fourt = (PARENTE)malloc(sizeof(PARENTE));
         p->fourt->linha = validas[14].l;
         p->fourt->coluna = validas[14].c;
         p->fourt->nivel = p->nivel -1;
         p->fourt->estado = jogadaFilho(p->estado,p->fourt);
     }
-    else if (validas[15].l && validas[15].c && altura > 0) {
+    else if (15<=i && altura > 0) {
         p->fift = (PARENTE)malloc(sizeof(PARENTE));
         p->fift->linha = validas[15].l;
         p->fift->coluna = validas[15].c;
         p->fift->nivel = p->nivel -1;
         p->fift->estado = jogadaFilho(p->estado,p->fift);
     }
-    else if (validas[16].l && validas[16].c && altura > 0) {
+    else if (16<=i && altura > 0) {
         p->sixt = (PARENTE)malloc(sizeof(PARENTE));
         p->sixt->linha = validas[16].l;
         p->sixt->coluna = validas[16].c;
         p->sixt->nivel = p->nivel -1;
         p->sixt->estado = jogadaFilho(p->estado,p->sixt);
     }
-    else if (validas[17].l && validas[17].c && altura > 0) {
+    else if (17<=i && altura > 0) {
         p->sevent = (PARENTE)malloc(sizeof(PARENTE));
         p->sevent->linha = validas[17].l;
         p->sevent->coluna = validas[17].c;
         p->sevent->nivel = p->nivel -1;
         p->sevent->estado = jogadaFilho(p->estado,p->sevent);
     }
-    else if (validas[18].l && validas[18].c && altura > 0) {
+    else if (18<=i && altura > 0) {
         p->eightt = (PARENTE)malloc(sizeof(PARENTE));
         p->eightt->linha = validas[18].l;
         p->eightt->coluna = validas[18].c;
         p->eightt->nivel = p->nivel -1;
         p->eightt->estado = jogadaFilho(p->estado,p->eightt);
     }
-    else if (validas[19].l && validas[19].c && altura > 0) {
+    else if (19<=i && altura > 0) {
         p->ninet = (PARENTE)malloc(sizeof(PARENTE));
         p->ninet->linha = validas[19].l;
         p->ninet->coluna = validas[19].c;
         p->ninet->nivel = p->nivel -1;
         p->ninet->estado = jogadaFilho(p->estado,p->ninet);
     }
-    else if (validas[20].l && validas[20].c && altura > 0) {
+    else if (20<=i && altura > 0) {
         p->twenty = (PARENTE)malloc(sizeof(PARENTE));
         p->twenty->linha = validas[20].l;
         p->twenty->coluna = validas[20].c;
         p->twenty->nivel = p->nivel -1;
         p->twenty->estado = jogadaFilho(p->estado,p->twenty);
     }
-    else if (validas[21].l && validas[21].c && altura > 0) {
+    else if (21<=i && altura > 0) {
         p->tone = (PARENTE)malloc(sizeof(PARENTE));
         p->tone->linha = validas[21].l;
         p->tone->coluna = validas[21].c;
         p->tone->nivel = p->nivel -1;
         p->tone->estado = jogadaFilho(p->estado,p->tone);
     }
-    else if (validas[22].l && validas[22].c && altura > 0) {
+    else if (22<=i && altura > 0) {
         p->ttwo = (PARENTE)malloc(sizeof(PARENTE));
         p->ttwo->linha = validas[22].l;
         p->ttwo->coluna = validas[22].c;
         p->ttwo->nivel = p->nivel -1;
         p->ttwo->estado = jogadaFilho(p->estado,p->ttwo);
     }
-    else if (validas[23].l && validas[23].c && altura > 0) {
+    else if (23<=i && altura > 0) {
         p->tthree = (PARENTE)malloc(sizeof(PARENTE));
         p->tthree->linha = validas[23].l;
         p->tthree->coluna = validas[23].c;
         p->tthree->nivel = p->nivel -1;
         p->tthree->estado = jogadaFilho(p->estado,p->tthree);
     }
-    else if (validas[24].l && validas[24].c && altura > 0) {
+    else if (24<=i && altura > 0) {
         p->tfour = (PARENTE)malloc(sizeof(PARENTE));
         p->tfour->linha = validas[24].l;
         p->tfour->coluna = validas[24].c;
@@ -1146,11 +1173,16 @@ PARENTE nivelTree(PARENTE p, int altura) {
  * @return Raiz da árvore
  */
 PARENTE jogTree(PARENTE p, int altura) {
+    //teste
+    printf("\njogTree inicializada com altura(%d)", altura);
 
     while (altura >= 0) {
         if (p->one) {
             p->one = nivelTree(p->one, altura); // cria a sub-árvore
             p->one = jogTree(p->one, altura-1); // cria as próximas sub-árvores até altura = 0
+            //teste
+            printf("\njogTree nodo 1: altura(%d), estado:\n", altura);
+            printa(p->one->estado);
         }
         else if (p->two) {
             p->two = nivelTree(p->two, altura);

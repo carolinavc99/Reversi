@@ -26,11 +26,13 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
 
     while (toupper(opcao[0]) != 'Q') {
 
-        if(e.modo =='1' || e.modo =='2' || e.modo =='3') {
-            if(e.bot==e.peca) {
-                printf("\n#### Jogada do Bot ####\n");
+        // Jogada do bot
+        if ((e.modo =='1' || e.modo =='2' || e.modo =='3') && (e.bot == e.peca)) {
+                printf("\n====> Jogada do Bot <====\n");
                 e = bot(e);
-            }
+                e = score(e);
+                topo = push(e,topo);
+                jogadas_efetuadas++;
         }
 
         printf("\n"
@@ -57,9 +59,11 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
                "                      =======================                      \n");
 
         // Desenha um cursor antecedido do próximo jogador a efetuar a jogada.
-        if(e.peca == VALOR_O) printf("\nO ➢ ");
+        if(e.peca == VALOR_O)
+            printf("\nO ➢ ");
         else {
-            if(e.peca == VALOR_X) printf("\nX ➢ ");
+            if(e.peca == VALOR_X)
+                printf("\nX ➢ ");
             else printf("\n  ➢ ");
         }
 
@@ -77,7 +81,7 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
                 arg1 = toupper(arg1);
 
                 if (chrtovalor(arg1) == VALOR_X || chrtovalor(arg1) == VALOR_O) {
-                    e = novoJogo(chrtovalor(arg1),'M');
+                    e = novoJogo(chrtovalor(arg1),'M',' ');
                     topo = resetJogadas(topo, &jogadas_efetuadas);
                     topo = push(e, topo);
                 } else
@@ -130,12 +134,15 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
                 }
                 break;
 
-
+            /* Esta opção faz duas coisas:
+             *  1. Inicia um novo jogo
+             *  2. Define as componentes do novo estado
+            */
             case 'A': {
                 // Lê argumentos dados.
                 sscanf(input, "%*s %c %c", &arg1, &arg2);
-                // Coloca em letra maiúscula a peça dada.
                 arg1 = toupper(arg1);
+
                 // Verifica se a peça e a dificuldade dadas são válidas.
                 if(arg1 != 'X' && arg1 != 'O')
                     printf("Peça inválida\n");
@@ -143,26 +150,16 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
                     if(arg2 != '1' && arg2 != '2' && arg2 != '3')
                         printf("Dificuldade inválida\n");
                     else {
-                        e.modo = arg2;
-                        //Cria um novo jogo.
-                        e = novoJogo(VALOR_X,'A');
+                        // Cria um novo jogo
+                        e = novoJogo(VALOR_X,'A',arg2);
 
-                        //Verifica se o Bot deve ser o primeiro a jogar
+                        // Define a peça do bot
                         if (arg1 == 'X') {
-                            permitido = 1;
                             e.bot = VALOR_X;
                         }
                         else
                             e.bot = VALOR_O;
 
-                        // Permite jogar ou não
-                        if (permitido == 1) {
-                            printf("\n\n====> Jogada do Bot <====\n");
-                            e = bot(e);
-                            e = score(e); // atualizar lista de estados efetuados
-                            topo = push(e, topo);
-                            jogadas_efetuadas++;
-                        }
                     }
                 }
                 break;
@@ -244,17 +241,9 @@ ESTADO menu (ESTADO e, struct JOGADA* topo) { // interpretador
 
         */
 
-
-
-
-
         // dar reset aos argumentos
         arg1='\0';
         arg2 = '\0';
-
-        // inversão (permanente) de 'permitido', uma vez que a partir de agora o bot já pode jogar
-        if (permitido == 0) // se não podia jogar primeiro
-            permitido = 1;  // então agora já pode jogar à vontade
     }
 
     return e;
