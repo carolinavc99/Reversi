@@ -1,0 +1,50 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/micooltb/Desktop/C de 'campeonato' V2/bot.h
+stack.h
+/home/micooltb/Desktop/C de 'campeonato' V2/stack.h
+
+/home/micooltb/Desktop/C de 'campeonato' V2/comandos.h
+estado.h
+/home/micooltb/Desktop/C de 'campeonato' V2/estado.h
+stack.h
+/home/micooltb/Desktop/C de 'campeonato' V2/stack.h
+
+/home/micooltb/Desktop/C de 'campeonato' V2/estado.h
+stdio.h
+-
+
+/home/micooltb/Desktop/C de 'campeonato' V2/menu.c
+menu.h
+/home/micooltb/Desktop/C de 'campeonato' V2/menu.h
+comandos.h
+/home/micooltb/Desktop/C de 'campeonato' V2/comandos.h
+stack.h
+/home/micooltb/Desktop/C de 'campeonato' V2/stack.h
+bot.h
+/home/micooltb/Desktop/C de 'campeonato' V2/bot.h
+stdio.h
+-
+ctype.h
+-
+string.h
+-
+gmpxx.h
+-
+
+/home/micooltb/Desktop/C de 'campeonato' V2/menu.h
+estado.h
+/home/micooltb/Desktop/C de 'campeonato' V2/estado.h
+stack.h
+/home/micooltb/Desktop/C de 'campeonato' V2/stack.h
+
+/home/micooltb/Desktop/C de 'campeonato' V2/stack.h
+estado.h
+/home/micooltb/Desktop/C de 'campeonato' V2/estado.h
+
